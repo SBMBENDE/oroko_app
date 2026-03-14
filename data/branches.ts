@@ -13,7 +13,7 @@ export const branches: Branch[] = [
     shortDescription: 'Our founding chapter, based in the heart of Paris.',
     description:
       'OCA France is the founding chapter of OCA-EU, established in Paris in 2015. We bring together members from across the Oroko diaspora living in France, hosting monthly cultural events, professional networking sessions, and community support programmes.',
-    logo: '/images/branches/france/logo.png',
+    logo: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773500874/eu-france_logo_w95txo.jpg',
     coverImage: '/images/branches/france/cover.jpg',
     contactEmail: 'france@oca-eu.org',
     leadership: {
@@ -43,7 +43,7 @@ export const branches: Branch[] = [
     shortDescription: 'Based in Brussels, the heart of Europe.',
     description:
       'OCA Belgium Brussels operates in the capital and serves as a bridge between the Oroko diaspora community and European institutions. Our chapter is active in advocacy, cultural exchange, and educational initiatives.',
-    logo: '/images/branches/belgium/logo.png',
+    logo: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773500888/eu-OCA_Belgium_dchwvi.jpg',
     coverImage: '/images/branches/belgium/cover.jpg',
     contactEmail: 'belgium@oca-eu.org',
     leadership: {
@@ -70,7 +70,7 @@ export const branches: Branch[] = [
     shortDescription: 'A vibrant community in the Wallonia region.',
     description:
       'OCA Belgium Liège is our second Belgian chapter, serving members across the Wallonia region. The branch focuses on cultural preservation, youth engagement, and integration support for newly arrived diaspora members.',
-    logo: '/images/branches/belgium/logo.png',
+    logo: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773500888/eu-OCA_Belgium_dchwvi.jpg',
     coverImage: '/images/branches/belgium/cover.jpg',
     contactEmail: 'belgium-liege@oca-eu.org',
     leadership: {
@@ -97,7 +97,7 @@ export const branches: Branch[] = [
     shortDescription: 'Our flagship UK chapter based in London.',
     description:
       'OCA UK Motto Mokor is one of our most active chapters, running entrepreneurship programmes, mentoring schemes, and vibrant cultural celebrations throughout the year. London serves as a hub for the wider UK network.',
-    logo: '/images/branches/uk/logo.png',
+    logo: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773500889/EU-UK_mgw0qz.jpg',
     coverImage: '/images/branches/uk/cover.jpg',
     contactEmail: 'uk-london@oca-eu.org',
     leadership: {
@@ -126,7 +126,7 @@ export const branches: Branch[] = [
     shortDescription: 'Connecting the Oroko diaspora across the UK.',
     description:
       'OCA UK Teteri serves members across the United Kingdom, championing cultural education, entrepreneurship, and community welfare within the Oroko diaspora.',
-    logo: '/images/branches/uk/logo.png',
+    logo: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773500889/EU-UK_mgw0qz.jpg',
     coverImage: '/images/branches/uk/cover.jpg',
     contactEmail: 'uk-teteri@oca-eu.org',
     leadership: {
@@ -154,7 +154,7 @@ export const branches: Branch[] = [
     shortDescription: 'A growing community in the Nordic region.',
     description:
       'OCA Finland is our Nordic chapter based in Helsinki. Though one of our newer branches, it has grown rapidly and is known for its focus on integration, education, and Nordic–African cultural dialogue.',
-    logo: '/images/branches/finland/logo.png',
+    logo: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773500800/EU-FINLAND_hbu11n.jpg',
     coverImage: '/images/branches/finland/cover.jpg',
     contactEmail: 'finland@oca-eu.org',
     leadership: {
@@ -181,7 +181,7 @@ export const branches: Branch[] = [
     shortDescription: 'A thriving new chapter in Dublin.',
     description:
       'OCA Ireland is our Dublin-based chapter, one of our most recently established branches. It brings together Oroko community members across Ireland, focused on cultural connectivity, diaspora welfare, and integration support.',
-    logo: '/images/branches/ireland/logo.png',
+    logo: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773500875/EU-IRELAND_svrrme.jpg',
     coverImage: '/images/branches/ireland/cover.jpg',
     contactEmail: 'ireland@oca-eu.org',
     leadership: {
@@ -209,7 +209,7 @@ export const branches: Branch[] = [
     shortDescription: 'Our flagship German chapter in the capital.',
     description:
       'OCA Germany Berlin is our flagship German chapter. We focus on professional development, business networking, and intercultural exchange, with a strong creative and entrepreneurial community across the city.',
-    logo: '/images/branches/germany/logo.png',
+    logo: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773500874/EU-GERMANY_svmhnp.jpg',
     coverImage: '/images/branches/germany/cover.jpg',
     contactEmail: 'germany-berlin@oca-eu.org',
     leadership: {
@@ -235,7 +235,7 @@ export const branches: Branch[] = [
     shortDescription: 'Connecting the diaspora in Northern Germany.',
     description:
       "OCA Germany Hamburg serves Oroko diaspora members across Northern Germany. The chapter is active in cultural events, trade, and community support, reflecting Hamburg's role as a vibrant port city and multicultural hub.",
-    logo: '/images/branches/germany/logo.png',
+    logo: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773500877/eu-NRW_paypbe.jpg',
     coverImage: '/images/branches/germany/cover.jpg',
     contactEmail: 'germany-hamburg@oca-eu.org',
     leadership: {
@@ -260,7 +260,7 @@ export const branches: Branch[] = [
     shortDescription: 'A growing presence in Southern Germany.',
     description:
       'OCA Germany Munich is our Southern Germany chapter, bringing together Oroko community members in Bavaria. The branch focuses on cultural celebration, professional networking, and support for students and families.',
-    logo: '/images/branches/germany/logo.png',
+    logo: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773500874/EU-BW_yvil0b.jpg',
     coverImage: '/images/branches/germany/cover.jpg',
     contactEmail: 'germany-munich@oca-eu.org',
     leadership: {

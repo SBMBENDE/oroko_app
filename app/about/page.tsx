@@ -17,7 +17,7 @@ const values = [
     title: 'Culture & Identity',
     description:
       'We celebrate the diversity of the Oroko community while finding strength in shared heritage and collective identity.',
-    image: 'https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800&auto=format&fit=crop&q=80',
+    image: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773458758/WhatsApp_Image_2026-03-13_at_20.53.02_5_cqbkxr.jpg',
   },
   {
     title: 'Our Constitution',
@@ -30,13 +30,13 @@ const values = [
     title: 'Excellence & Ambition',
     description:
       'We champion professional development, education, and entrepreneurship as pathways to self-determination.',
-    image: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&auto=format&fit=crop&q=80',
+    image: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773458706/WhatsApp_Image_2026-03-13_at_20.48.23_fvy31z.jpg',
   },
   {
     title: 'Solidarity & Mutual Aid',
     description:
       'We stand together — supporting members through welfare programmes, collective care, and networks of trust that transcend borders.',
-    image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&auto=format&fit=crop&q=80',
+    image: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773458707/WhatsApp_Image_2026-03-13_at_20.52.59_7_kytdou.jpg',
   },
 ];
 
@@ -45,13 +45,13 @@ const missionRootsCards = [
     title: 'Our Mission',
     description:
       'To empower, promote, and preserve Oroko culture, language and development in Europe and the Oroko regions in Cameroon. As a non-profit and apolitical organisation, we unite our communities through shared values, mutual aid, and a commitment to lasting impact.',
-    image: 'https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=800&auto=format&fit=crop&q=80',
+    image: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773458758/WhatsApp_Image_2026-03-13_at_20.53.02_4_kjrmag.jpg',
   },
   {
     title: 'Our Roots',
     description:
       'Found in the SouthWest Region of Cameroon across the Meme and Ndian divisions, the Oroko people — historically known as the Balondos — adopted the name "Oroko", meaning "welcome". Made up of 10 distinct clans, they are the largest tribe in the South West Region, now thriving across Europe.',
-    image: 'https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800&auto=format&fit=crop&q=80',
+    image: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773458744/WhatsApp_Image_2026-03-13_at_20.53.01_6_tzsjhc.jpg',
   },
 ];
 

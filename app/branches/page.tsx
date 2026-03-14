@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Section, SectionHeading } from '@/components/ui/Section';
-import { BranchCard } from '@/features/branches/BranchCard';
+import { BranchLogoGrid } from '@/features/branches/BranchLogoGrid';
 import { branches } from '@/data/branches';
 
 export const metadata: Metadata = {
@@ -34,11 +34,7 @@ export default function BranchesPage() {
           title={`${branches.length} Active Chapters`}
           subtitle="Click on a branch to meet its members, see upcoming events, and explore the gallery."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {branches.map((branch) => (
-            <BranchCard key={branch.id} branch={branch} />
-          ))}
-        </div>
+        <BranchLogoGrid branches={branches} />
       </Section>
     </main>
   );
