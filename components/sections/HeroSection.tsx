@@ -37,24 +37,32 @@ export function HeroSection() {
         <div className="grid md:grid-cols-[1fr_420px] lg:grid-cols-[1fr_460px] gap-10 lg:gap-16 items-center">
 
           {/* ── LEFT ── */}
-          <div className="flex flex-col items-center text-center md:items-start md:text-left">
-            {/* Overline badge */}
-            <div className="inline-flex items-center gap-2 rounded-full bg-amber-600/20 border border-amber-600/30 px-4 py-1.5 mb-6">
-              <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
-              <span className="text-xs text-amber-300 font-semibold uppercase tracking-widest">
-                OROKO CULTURAL ASSOCIATION-EU
+          <div className="flex flex-col items-start text-left">
+            {/* Badge — desktop only (above headline) */}
+            <div className="hidden sm:inline-flex items-center gap-1.5 rounded-full bg-amber-600/20 border border-amber-600/30 px-3 py-1.5 mb-6">
+              <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse shrink-0" />
+              <span className="text-xs text-amber-300 font-semibold uppercase tracking-wider whitespace-nowrap">
+                United by Culture · Rooted in Africa · Thriving in Europe
               </span>
             </div>
 
             <h1
               ref={headlineRef}
-              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.05] tracking-tight mb-6"
+              className="text-[2.6rem] sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-[0.95] tracking-tight mb-4 sm:mb-6"
             >
-              United by Culture.{' '}
-              <span className="text-amber-400">Rooted in Africa.</span>
-              <br />
-              Thriving in Europe.
+              OROKO<br />
+              <span className="text-amber-400">CULTURAL</span><br />
+              <span className="whitespace-nowrap">ASSOCIATION<span className="text-amber-400"> -</span></span>{' '}
+              <span className="text-amber-400 whitespace-nowrap">EUROPE</span>
             </h1>
+
+            {/* Badge — mobile only (below headline) */}
+            <div className="inline-flex sm:hidden items-center gap-1.5 rounded-full bg-amber-600/20 border border-amber-600/30 px-3 py-1.5 mb-6">
+              <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse shrink-0" />
+              <span className="text-[8px] text-amber-300 font-semibold uppercase tracking-wider whitespace-nowrap">
+                United by Culture · Rooted in Africa · Thriving in Europe
+              </span>
+            </div>
 
             <p
               ref={subtitleRef}
@@ -76,7 +84,7 @@ export function HeroSection() {
             </div>
 
             {/* Trust bar */}
-            <div className="flex items-center justify-center md:justify-start gap-4">
+            <div className="flex items-center justify-start gap-4">
               <div className="flex -space-x-2">
                 {TRUST_INITIALS.map((initials, i) => (
                   <div
