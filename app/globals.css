@@ -39,14 +39,14 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: theme('colors.stone.100');
+  background: #18181b;
 }
 ::-webkit-scrollbar-thumb {
-  background: theme('colors.stone.300');
+  background: #52525b;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: theme('colors.stone.400');
+  background: #71717a;
 }
 
 /* Prose overrides */

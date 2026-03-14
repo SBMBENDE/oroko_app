@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { EventGrid } from '@/features/events/EventGrid';
+import { EventsHero } from '@/features/events/EventsHero';
 import { getAllEvents } from '@/data/events';
 
 export const metadata: Metadata = {
@@ -19,16 +20,7 @@ export default function EventsPage() {
     <main>
       {/* Header */}
       <Section className="bg-stone-950 text-white pt-20 md:pt-20" tight>
-        <div className="max-w-2xl py-12 text-center md:text-left">
-          <p className="text-amber-400 text-sm font-medium uppercase tracking-widest mb-3">
-            Agenda
-          </p>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Events</h1>
-          <p className="text-stone-300 text-lg leading-relaxed">
-            From cultural galas to professional workshops, OCA-EU hosts events
-            that bring our communities together and create lasting connections.
-          </p>
-        </div>
+        <EventsHero />
       </Section>
 
       {/* Upcoming events */}

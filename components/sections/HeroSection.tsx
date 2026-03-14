@@ -7,6 +7,8 @@ import { Button } from '@/components/ui/Button';
 import { DonateButton } from '@/components/ui/DonateButton';
 import { animateHero } from '@/animations';
 
+const TRUST_INITIALS = ['II', 'AA', 'ER', 'TI', 'EA'];
+
 export function HeroSection() {
   const headlineRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
@@ -19,77 +21,124 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-linear-to-br from-stone-950 via-stone-900 to-amber-950">
+    <section className="relative bg-zinc-950 min-h-screen flex flex-col justify-center overflow-hidden">
       {/* Background pattern */}
-      <div className="absolute inset-0 opacity-[0.03]"
+      <div
+        className="absolute inset-0 opacity-[0.03]"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         }}
       />
+      {/* Glows */}
+      <div className="absolute bottom-0 right-0 w-125 h-125 rounded-full bg-amber-600/10 blur-3xl pointer-events-none" />
+      <div className="absolute top-0 left-0 w-100 h-100 rounded-full bg-amber-900/15 blur-3xl pointer-events-none" />
 
-      {/* Decorative glow */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 rounded-full bg-amber-600/10 blur-3xl pointer-events-none" />
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-28 sm:py-32">
+        <div className="grid md:grid-cols-[1fr_420px] lg:grid-cols-[1fr_460px] gap-10 lg:gap-16 items-center">
 
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 sm:pt-0 pb-24 sm:pb-0">
-        {/* Overline */}
-        <div className="inline-flex items-center gap-2 rounded-full bg-amber-600/20 border border-amber-600/30 px-4 py-1.5 mb-5 sm:mb-8">
-          <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
-          <span className="text-sm text-amber-300 font-medium">Oroko Cultural Association-Europe</span>
-        </div>
-
-        <h1
-          ref={headlineRef}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight mb-4 sm:mb-6"
-          style={{ opacity: 0 }}
-        >
-          United by Culture.{' '}
-          <span className="text-amber-400">Rooted in Africa.</span>
-          <br />
-          Thriving in Europe.
-        </h1>
-
-        <p
-          ref={subtitleRef}
-          className="text-lg md:text-xl text-stone-300 max-w-2xl mx-auto leading-relaxed mb-7 sm:mb-10"
-          style={{ opacity: 0 }}
-        >
-          OCA-EU connects the African diaspora across Europe — from Paris to
-          Helsinki — through culture, community, and shared ambition.
-        </p>
-
-        <div
-          ref={ctaRef}
-          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
-          style={{ opacity: 0 }}
-        >
-          <Button size="sm" variant="primary" className="w-full sm:w-auto sm:text-base! sm:px-6! sm:py-3!" asChild>
-            <Link href="/branches" className="flex items-center justify-center gap-2">
-              Explore Branches <ArrowRight className="w-4 h-4 shrink-0" />
-            </Link>
-          </Button>
-          <Button size="sm" variant="ghost" className="w-full sm:w-auto sm:text-base! sm:px-6! sm:py-3! text-white bg-white/10 hover:bg-white/20" asChild>
-            <Link href="/about">Learn more about OCA-EU</Link>
-          </Button>
-          <DonateButton size="sm" variant="outline" label="Donate" className="w-full sm:w-auto sm:text-base! sm:px-6! sm:py-3!" />
-        </div>
-
-        {/* ── Stats strip ── */}
-        <div className="mt-10 sm:mt-14 grid grid-cols-3 gap-px rounded-2xl overflow-hidden border border-white/10 bg-white/10 max-w-sm sm:max-w-none sm:w-fit mx-auto">
-          {[
-            { value: '800+', label: 'Members' },
-            { value: '10', label: 'Branches' },
-            { value: '6+', label: 'Countries' },
-          ].map(({ value, label }) => (
-            <div key={label} className="flex flex-col items-center justify-center py-4 px-5 bg-white/5 backdrop-blur-sm">
-              <span className="text-2xl sm:text-3xl font-bold text-amber-400 leading-none">{value}</span>
-              <span className="text-xs text-stone-400 mt-1 uppercase tracking-widest">{label}</span>
+          {/* ── LEFT ── */}
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
+            {/* Overline badge */}
+            <div className="inline-flex items-center gap-2 rounded-full bg-amber-600/20 border border-amber-600/30 px-4 py-1.5 mb-6">
+              <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
+              <span className="text-xs text-amber-300 font-semibold uppercase tracking-widest">
+                OROKO CULTURAL ASSOCIATION-EU
+              </span>
             </div>
-          ))}
+
+            <h1
+              ref={headlineRef}
+              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.05] tracking-tight mb-6"
+            >
+              United by Culture.{' '}
+              <span className="text-amber-400">Rooted in Africa.</span>
+              <br />
+              Thriving in Europe.
+            </h1>
+
+            <p
+              ref={subtitleRef}
+              className="text-zinc-400 text-base sm:text-lg max-w-xl leading-relaxed mb-8"
+            >
+              OCA-EU connects the African diaspora across Europe through culture, community, and shared ambition.
+            </p>
+
+            <div ref={ctaRef} className="flex flex-col sm:flex-row gap-3 mb-10 w-full md:w-auto">
+              <Button size="lg" variant="primary" asChild>
+                <Link href="/branches" className="flex items-center gap-2">
+                  Explore Branches <ArrowRight className="w-4 h-4 shrink-0" />
+                </Link>
+              </Button>
+              <Button size="lg" variant="ghost" className="text-white! bg-white/10 hover:bg-white/20!" asChild>
+                <Link href="/about">Our Mission</Link>
+              </Button>
+              <DonateButton size="lg" variant="outline" label="Donate" className="sm:hidden" />
+            </div>
+
+            {/* Trust bar */}
+            <div className="flex items-center justify-center md:justify-start gap-4">
+              <div className="flex -space-x-2">
+                {TRUST_INITIALS.map((initials, i) => (
+                  <div
+                    key={initials}
+                    className="w-9 h-9 rounded-full bg-amber-700 border-2 border-zinc-950 flex items-center justify-center text-white text-xs font-bold"
+                    style={{ zIndex: 10 - i }}
+                  >
+                    {initials}
+                  </div>
+                ))}
+              </div>
+              <div>
+                <p className="text-white font-semibold text-sm">800+ Active Members</p>
+                <p className="text-zinc-500 text-xs">Across 6 European countries</p>
+              </div>
+            </div>
+          </div>
+
+          {/* ── RIGHT — Floating stat + quote card ── */}
+          <div className="hidden md:block">
+            <div className="bg-zinc-900/70 border border-zinc-800 rounded-2xl p-6 backdrop-blur-sm">
+              {/* Stats 2×2 grid */}
+              <div className="grid grid-cols-2 gap-3 mb-5">
+                {[
+                  { value: '800+', label: 'Members' },
+                  { value: '10',   label: 'Chapters' },
+                  { value: '6+',   label: 'Countries' },
+                  { value: '15+',  label: 'Events/yr' },
+                ].map(({ value, label }) => (
+                  <div key={label} className="bg-zinc-800/70 rounded-xl p-4 text-center">
+                    <span className="text-2xl font-bold text-amber-400 block leading-none">{value}</span>
+                    <span className="text-zinc-500 text-xs mt-1.5 uppercase tracking-widest block">{label}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* President portrait */}
+              <div className="border-t border-zinc-800 pt-4">
+                <div className="flex items-center justify-between mb-3">
+                  <div>
+                    <p className="text-white font-semibold text-sm">Iya Iye</p>
+                    <p className="text-zinc-500 text-xs">President, OCA-EU</p>
+                  </div>
+                  <span className="text-xs text-amber-400/80 uppercase tracking-widest">Leadership</span>
+                </div>
+                <div className="w-full h-80 rounded-xl overflow-hidden border border-zinc-700/50">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="https://res.cloudinary.com/dkd3k6eau/image/upload/v1766575377/kix9kd3i4kd6vq7wxc32.jpg"
+                    alt="Iya Iye – President, OCA-EU"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/40">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 hidden sm:flex flex-col items-center gap-2 text-white/30">
         <span className="text-xs uppercase tracking-widest">Scroll</span>
         <ChevronDown className="w-4 h-4 animate-bounce" />
       </div>
