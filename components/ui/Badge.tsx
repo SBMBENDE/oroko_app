@@ -1,0 +1,22 @@
+import { cn } from '@/lib/utils';
+
+interface BadgeProps {
+  children: React.ReactNode;
+  className?: string;
+  variant?: 'default' | 'outline';
+}
+
+export function Badge({ children, className, variant = 'default' }: BadgeProps) {
+  return (
+    <span
+      className={cn(
+        'inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold tracking-wide uppercase',
+        variant === 'default' && 'bg-amber-100 text-amber-800',
+        variant === 'outline' && 'border border-stone-300 text-stone-600',
+        className
+      )}
+    >
+      {children}
+    </span>
+  );
+}
