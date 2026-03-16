@@ -71,8 +71,8 @@ export function Navbar() {
               variant={scrolled ? 'solid' : 'outline'}
               label="Donate"
             />
-            <Button size="sm" variant={scrolled ? 'primary' : 'outline'}>
-              Join OCA-EU
+            <Button size="sm" variant={scrolled ? 'primary' : 'outline'} asChild>
+              <Link href="/contact">Join OCA-EU</Link>
             </Button>
           </div>
 
@@ -108,8 +108,8 @@ export function Navbar() {
             </ul>
             <div className="px-4 py-3 border-t border-stone-100 flex flex-col gap-2">
               <DonateButton size="sm" label="Donate" className="w-full justify-center" />
-              <Button size="sm" className="w-full justify-center">
-                Join OCA-EU
+              <Button size="sm" className="w-full justify-center" asChild>
+                <Link href="/contact" onClick={() => setIsOpen(false)}>Join OCA-EU</Link>
               </Button>
             </div>
           </div>
