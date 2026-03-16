@@ -29,16 +29,29 @@ function useCountdown(targetDate: string) {
 }
 
 function CountdownBadge({ date }: { date: string }) {
+  const [mounted, setMounted] = useState(false);
   const { days, hours, minutes, seconds } = useCountdown(date);
+  useEffect(() => { Promise.resolve().then(() => setMounted(true)); }, []);
   return (
     <div className="mt-3 flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-xl px-3 py-2">
       <Timer className="w-3.5 h-3.5 text-amber-600 shrink-0" />
       <span className="text-xs text-amber-700 font-medium">Starts in</span>
       <div className="flex items-center gap-1 ml-auto font-mono text-xs font-bold text-stone-800">
-        <span className="bg-white border border-stone-200 rounded px-1.5 py-0.5">{String(days).padStart(2,'0')}d</span>
-        <span className="bg-white border border-stone-200 rounded px-1.5 py-0.5">{String(hours).padStart(2,'0')}h</span>
-        <span className="bg-white border border-stone-200 rounded px-1.5 py-0.5">{String(minutes).padStart(2,'0')}m</span>
-        <span className="bg-white border border-stone-200 rounded px-1.5 py-0.5">{String(seconds).padStart(2,'0')}s</span>
+        {mounted ? (
+          <>
+            <span className="bg-white border border-stone-200 rounded px-1.5 py-0.5">{String(days).padStart(2,'0')}d</span>
+            <span className="bg-white border border-stone-200 rounded px-1.5 py-0.5">{String(hours).padStart(2,'0')}h</span>
+            <span className="bg-white border border-stone-200 rounded px-1.5 py-0.5">{String(minutes).padStart(2,'0')}m</span>
+            <span className="bg-white border border-stone-200 rounded px-1.5 py-0.5">{String(seconds).padStart(2,'0')}s</span>
+          </>
+        ) : (
+          <>
+            <span className="bg-white border border-stone-200 rounded px-1.5 py-0.5">--d</span>
+            <span className="bg-white border border-stone-200 rounded px-1.5 py-0.5">--h</span>
+            <span className="bg-white border border-stone-200 rounded px-1.5 py-0.5">--m</span>
+            <span className="bg-white border border-stone-200 rounded px-1.5 py-0.5">--s</span>
+          </>
+        )}
       </div>
     </div>
   );
