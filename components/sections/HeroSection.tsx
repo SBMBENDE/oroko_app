@@ -121,7 +121,7 @@ export function HeroSection() {
                 ))}
               </div>
 
-              {/* President portrait */}
+              {/* President portrait (desktop only) */}
               <div className="border-t border-zinc-800 pt-4">
                 <div className="flex items-center justify-between mb-3">
                   <div>
@@ -133,11 +133,32 @@ export function HeroSection() {
                 <div className="w-full h-80 rounded-xl overflow-hidden border border-zinc-700/50">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="https://res.cloudinary.com/dkd3k6eau/image/upload/v1766575377/kix9kd3i4kd6vq7wxc32.jpg"
+                    src="https://res.cloudinary.com/dkd3k6eau/image/upload/v1773689908/copy_of_iya_iye_good_xg6dck_09c9dd.png"
                     alt="Iya Iye – President, OCA-EU"
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* President portrait (mobile only, after stats) */}
+          <div className="block md:hidden mt-8">
+            <div className="bg-zinc-900/70 border border-zinc-800 rounded-2xl p-6 backdrop-blur-sm">
+              <div className="flex items-center justify-between mb-3">
+                <div>
+                  <p className="text-white font-semibold text-sm">Iya Iye</p>
+                  <p className="text-zinc-500 text-xs">President, OCA-EU</p>
+                </div>
+                <span className="text-xs text-amber-400/80 uppercase tracking-widest">Leadership</span>
+              </div>
+              <div className="w-full h-72 rounded-xl overflow-hidden border border-zinc-700/50">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="https://res.cloudinary.com/dkd3k6eau/image/upload/v1773689908/copy_of_iya_iye_good_xg6dck_09c9dd.png"
+                  alt="Iya Iye – President, OCA-EU"
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
             </div>
           </div>

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { ExternalLink, Users, Calendar } from 'lucide-react';
 import type { Project } from '@/lib/types';
 import { Card, CardContent } from '@/components/ui/Card';
-import { Badge } from '@/components/ui/Badge';
+// ...existing code...
 import { formatDate } from '@/lib/utils';
 import {
   STATUS_LABELS,

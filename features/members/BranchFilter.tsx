@@ -7,7 +7,7 @@ const BRANCH_FLAGS: Record<string, string> = {
   uk: '🇬🇧',
   belgium: '🇧🇪',
   finland: '🇫🇮',
-  italy: '🇮🇹',
+  ireland: '🇮🇹',
   germany: '🇩🇪',
 };
 
