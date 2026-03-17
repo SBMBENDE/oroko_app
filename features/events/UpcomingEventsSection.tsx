@@ -55,7 +55,7 @@ export function UpcomingEventsSection({ events }: { events: Event[] }) {
               Upcoming Events
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white">
-              Connect at our next gathering
+              Be part of our next gathering
             </h2>
           </div>
           <Button

@@ -31,7 +31,7 @@ export function MembersHero() {
           OCA-EU <span className="text-amber-400">Members</span>
         </h1>
         <p className="hero-sub text-stone-300 text-lg leading-relaxed max-w-xl mb-10" style={{ opacity: 0 }}>
-          An extraordinary community of professionals, artists, entrepreneurs, and
+          An extraordinary community of professionals, entrepreneurs, and
           changemakers united by culture and ambition across Europe.
         </p>
         <div className="flex flex-wrap gap-6 sm:gap-10">

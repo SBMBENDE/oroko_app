@@ -17,10 +17,10 @@ export const branches: Branch[] = [
     coverImage: '/images/branches/france/cover.jpg',
     contactEmail: 'france@oca-eu.org',
     leadership: {
-      president: 'Amara Diallo',
-      vicePresident: 'Fatou Mensah',
-      secretary: 'Kwame Asante',
-      treasurer: 'Ines Bakayoko',
+      president: 'Isele Philip',
+      vicePresident: 'Samuel Sakwe',
+      secretary: 'Tom Tommy',
+      treasurer: 'Rose Lombe',
     },
     socialLinks: {
       facebook: 'https://facebook.com/ocaFrance',

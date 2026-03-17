@@ -13,7 +13,7 @@ const BRANCH_ACCENT: Record<string, { gradient: string; badge: string; border: s
   uk:       { gradient: 'from-red-800 via-red-600 to-red-400',      badge: 'bg-red-100 text-red-800',     border: 'border-red-200'  },
   belgium:  { gradient: 'from-yellow-700 via-yellow-500 to-yellow-300', badge: 'bg-yellow-100 text-yellow-800', border: 'border-yellow-200' },
   finland:  { gradient: 'from-sky-800 via-sky-600 to-sky-400',      badge: 'bg-sky-100 text-sky-800',     border: 'border-sky-200'  },
-  italy:    { gradient: 'from-green-800 via-green-600 to-green-400', badge: 'bg-green-100 text-green-800', border: 'border-green-200' },
+  ireland:  { gradient: 'from-green-800 via-green-600 to-green-400', badge: 'bg-green-100 text-green-800', border: 'border-green-200' },
   germany:  { gradient: 'from-stone-800 via-stone-600 to-stone-400', badge: 'bg-stone-200 text-stone-800', border: 'border-stone-300' },
 };
 const DEFAULT_ACCENT = { gradient: 'from-amber-800 via-amber-600 to-amber-400', badge: 'bg-amber-100 text-amber-800', border: 'border-amber-200' };

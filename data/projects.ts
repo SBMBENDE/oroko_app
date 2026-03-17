@@ -21,11 +21,11 @@ export const projects: Project[] = [
   },
   {
     id: 'proj-mentorship',
-    title: 'Pan-European Mentorship Programme',
+    title: 'Oroko Girl Child Mentorship Programme',
     description:
-      'A structured 6-month mentoring scheme pairing emerging professionals with senior leaders.',
+      'A structured 6-month mentoring scheme pairing emerging femaleprofessionals with senior leaders.',
     longDescription:
-      'Our Pan-European Mentorship Programme connects young professionals (25–35) from the African diaspora with established industry leaders and executives across Europe. Each cohort runs for six months, featuring one-on-one mentoring sessions, group masterclasses, and a final showcase. The programme covers sectors including finance, technology, law, healthcare, and the creative industries.',
+      'Our Mentorship Programme connects young professionals (20–25) from the African diaspora with established industry leaders and executives across Europe. Each cohort runs for six months, featuring one-on-one mentoring sessions, group masterclasses, and a final showcase. The programme covers sectors including finance, technology, law, healthcare, and the creative industries.',
     status: 'active',
     category: 'entrepreneurship',
     branchSlugs: ['uk', 'france', 'germany'],
@@ -39,14 +39,14 @@ export const projects: Project[] = [
   // ── Culture ──────────────────────────────────────────────────────────────────
   {
     id: 'proj-oral-history',
-    title: 'African Diaspora Oral History Archive',
+    title: 'Oroko History Archive',
     description:
-      'A digital archive preserving first-person stories and narratives of the African diaspora in Europe.',
+      'A digital archive preserving first-person stories and narratives of the Oroko land.',
     longDescription:
-      "In partnership with two European universities, we are building a publicly accessible digital archive of oral histories from African diaspora community members across six countries. Interviews are conducted in multiple languages and cover topics including migration journeys, cultural identity, professional life, and community building. The archive will launch publicly in late 2026.",
+      "In partnership with two European universities, we are building a publicly accessible digital archive of oral histories from Oroko diaspora community members across six countries. Interviews are conducted in multiple languages and cover topics including migration journeys, cultural identity, professional life, and community building. The archive will launch publicly in late 2026.",
     status: 'active',
     category: 'culture',
-    branchSlugs: ['france', 'belgium', 'uk', 'italy', 'finland', 'germany'],
+    branchSlugs: ['france', 'belgium', 'uk', 'ireland', 'finland', 'germany'],
     startDate: '2024-09-01',
     endDate: '2026-12-31',
     image: '/images/projects/oral-history.jpg',
@@ -56,14 +56,14 @@ export const projects: Project[] = [
   },
   {
     id: 'proj-cultural-festival',
-    title: 'OROKO Pan-African Cultural Festival',
+    title: 'OROKO Cultural Festival',
     description:
-      'An annual multi-city festival celebrating African arts, music, cuisine, and cultural heritage.',
+      'An annual multi-city festival celebrating Oroko arts, music, cuisine, and cultural heritage.',
     longDescription:
-      'The OROKO Pan-African Cultural Festival is our flagship annual cultural event, held simultaneously across multiple European cities. The festival features live music, traditional dance performances, contemporary art exhibitions, food markets, panel discussions, and children\'s programming. Each edition draws thousands of visitors and is broadcast online to an international audience.',
+      'The OROKO Cultural Festival is our flagship annual cultural event, held  across multiple European cities. The festival features live music, traditional dance performances, contemporary art exhibitions, food markets, panel discussions, and children\'s programming. Each edition draws thousands of visitors and is broadcast online to an international audience.',
     status: 'active',
     category: 'culture',
-    branchSlugs: ['france', 'uk', 'belgium', 'italy', 'germany', 'finland'],
+    branchSlugs: ['france', 'uk', 'belgium', 'ireland', 'germany', 'finland'],
     startDate: '2016-07-01',
     image: '/images/projects/festival.jpg',
     tags: ['Culture', 'Arts', 'Music', 'Festival'],
@@ -72,31 +72,31 @@ export const projects: Project[] = [
     website: '#',
   },
   // ── Advocacy ─────────────────────────────────────────────────────────────────
-  {
-    id: 'proj-policy-voice',
-    title: 'Diaspora Policy Voice Initiative',
-    description:
-      'Advocacy work engaging European institutions on diaspora rights, representation, and policies.',
-    longDescription:
-      'The Diaspora Policy Voice Initiative is OCA-EU\'s advocacy arm, working directly with European Parliament representatives, national governments, and EU agencies to amplify the voice of the African diaspora in policy discussions. We publish policy briefs, host roundtable meetings with officials, and coordinate joint campaigns with other diaspora organisations across Europe.',
-    status: 'active',
-    category: 'advocacy',
-    branchSlugs: ['belgium', 'france', 'uk'],
-    startDate: '2019-01-01',
-    image: '/images/projects/policy.jpg',
-    tags: ['Advocacy', 'Policy', 'EU', 'Rights'],
-    lead: 'Celestine Nkosi',
-    impactMetric: '12 policy briefs published',
-    website: '#',
-  },
+  // {
+  //   id: 'proj-policy-voice',
+  //   title: 'Diaspora Policy Voice Initiative',
+  //   description:
+  //     'Advocacy work engaging European institutions on diaspora rights, representation, and policies.',
+  //   longDescription:
+  //     'The Diaspora Policy Voice Initiative is OCA-EU\'s advocacy arm, working directly with European Parliament representatives, national governments, and EU agencies to amplify the voice of the African diaspora in policy discussions. We publish policy briefs, host roundtable meetings with officials, and coordinate joint campaigns with other diaspora organisations across Europe.',
+  //   status: 'active',
+  //   category: 'advocacy',
+  //   branchSlugs: ['belgium', 'france', 'uk'],
+  //   startDate: '2019-01-01',
+  //   image: '/images/projects/policy.jpg',
+  //   tags: ['Advocacy', 'Policy', 'EU', 'Rights'],
+  //   lead: 'Celestine Nkosi',
+  //   impactMetric: '12 policy briefs published',
+  //   website: '#',
+  // },
   // ── Entrepreneurship ─────────────────────────────────────────────────────────
   {
     id: 'proj-startup-hub',
     title: 'OROKO Startup Hub',
     description:
-      'A business incubator and accelerator programme for African diaspora entrepreneurs.',
+      'A business incubator and accelerator programme for Oroko diaspora entrepreneurs.',
     longDescription:
-      'The OROKO Startup Hub is a 12-week accelerator programme for African diaspora entrepreneurs launching or scaling businesses within Europe. Participants receive business coaching, legal and financial advisory sessions, pitch practice, and access to our investor network. The programme runs twice per year in partnership with co-working spaces in Paris, London, and Berlin.',
+      'The OROKO Startup Hub is a 12-week accelerator programme for Oroko diaspora entrepreneurs launching or scaling businesses within Europe. Participants receive business coaching, legal and financial advisory sessions, pitch practice, and access to our investor network. The programme runs twice per year in partnership with co-working spaces in Paris, London, and Berlin.',
     status: 'active',
     category: 'entrepreneurship',
     branchSlugs: ['france', 'uk', 'germany'],
@@ -117,19 +117,19 @@ export const projects: Project[] = [
       'The OROKO Digital Skills Bootcamp offers free 8-week intensive courses in web development, data literacy, digital marketing, and UX design for diaspora youth (16–30) and career changers. Courses are delivered both in-person and online, with instructors drawn from OROKO member companies and volunteer tech professionals. Graduates receive an OROKO Digital Certificate.',
     status: 'upcoming',
     category: 'technology',
-    branchSlugs: ['finland', 'uk', 'germany'],
+    branchSlugs: ['france', 'uk', 'germany'],
     startDate: '2026-06-01',
     image: '/images/projects/digital-skills.jpg',
     tags: ['Technology', 'Coding', 'Skills', 'Youth'],
-    lead: 'Adwoa Sarkodie',
-    impactMetric: 'Launching June 2026',
+    lead: 'Sam Mbende',
+    impactMetric: 'Launching September 2026',
   },
   // ── Completed ────────────────────────────────────────────────────────────────
   {
     id: 'proj-health-campaign',
-    title: 'Diaspora Health Awareness Campaign',
+    title: 'Oroko Diaspora Health Awareness Campaign',
     description:
-      'A community health initiative addressing health literacy and access for the diaspora.',
+      'A community health initiative addressing health literacy and access for the Oroko diaspora.',
     longDescription:
       'Delivered in partnership with healthcare professionals and NGOs, this campaign ran across five countries and focused on preventive health, mental health awareness, and navigating European healthcare systems. The campaign included free health screening days, multilingual health guides, and online webinars with medical professionals.',
     status: 'completed',
@@ -139,7 +139,7 @@ export const projects: Project[] = [
     endDate: '2024-06-30',
     image: '/images/projects/health.jpg',
     tags: ['Health', 'Wellbeing', 'Community'],
-    lead: 'Naomi Adeyemi',
+    lead: 'Dr. Naomi Basake',
     impactMetric: '2,000+ people reached',
   },
 ];

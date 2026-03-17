@@ -72,7 +72,7 @@ export function ExecutivesSection({ members }: ExecutivesSectionProps) {
         <div className="flex items-center gap-4 mb-8">
           <div className="flex-1 h-px bg-stone-200" />
           <span className="text-xs font-semibold text-stone-400 uppercase tracking-widest whitespace-nowrap">
-            Vice Presidents &amp; Officers
+            Vice President &amp; Officers
           </span>
           <div className="flex-1 h-px bg-stone-200" />
         </div>
