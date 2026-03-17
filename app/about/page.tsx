@@ -35,7 +35,7 @@ const values = [
   {
     title: 'Solidarity & Mutual Aid',
     description:
-      'We stand together — supporting members through welfare programmes, collective care, and networks of trust that transcend borders.',
+      'We stand united in supporting our members through challenging times, fostering collective care and welfare initiatives while building trusted networks that transcend borders.',
     image: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773458707/WhatsApp_Image_2026-03-13_at_20.52.59_7_kytdou.jpg',
   },
 ];
