@@ -91,8 +91,8 @@ export default function AboutPage() {
           <p className="text-stone-300 text-base sm:text-lg leading-relaxed max-w-2xl mb-7 sm:mb-10">
             OCA-EU is a{' '}
             <span className="text-white font-medium">non-profit and apolitical organization</span>{' '}
-            promoting the socio-cultural and economic development of the Oroko culture — in Europe
-            and in Oroko areas in Cameroon — while protecting and catering for the interests of its
+            promoting the socio-cultural and economic development of the Oroko culture in Europe
+            and in Oroko areas in Cameroon while protecting and catering for the interests of its
             members across all European branches.
           </p>
 

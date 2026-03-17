@@ -21,8 +21,7 @@ export default function GalleryPage() {
             Our Gallery
           </h1>
           <p className="text-zinc-400 text-lg sm:text-xl leading-relaxed max-w-2xl">
-            A window into the vibrant life of OCA-EU — from intimate branch
-            gatherings to large-scale cultural celebrations across Europe.
+            Capturing moments that define OCA-EU — community, culture, and connection across Europe.
           </p>
         </div>
       </section>
