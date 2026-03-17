@@ -55,7 +55,7 @@ export function UpcomingEventsSection({ events }: { events: Event[] }) {
               Upcoming Events
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white">
-              Be part of our next gathering
+              OROKO UK Fundraiser
             </h2>
           </div>
           <Button

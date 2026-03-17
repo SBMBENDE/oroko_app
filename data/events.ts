@@ -20,9 +20,9 @@ export const events: Event[] = [
     description:
       'Our flagship annual convention celebrates the achievements of OCA-EU members across Europe with an evening of music, art, and recognition awards.',
     date: '2026-08-15',
-    location: 'Palais Brongniart, Paris, France',
+    location: 'Paris, France',
     branchSlug: 'france',
-    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&auto=format&fit=crop&q=80',
+    image: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773723683/OCA-EU_ciwtoj.png',
     category: 'celebration',
     registrationLink: '#',
     featured: true,
