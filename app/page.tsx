@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowRight, Music, Users, Globe, Star, MapPin, Calendar, Heart } from 'lucide-react';
+import { ArrowRight, Music, Users, Globe, Star, Heart } from 'lucide-react';
 import { HeroSection } from '@/components/sections/HeroSection';
 import { Button } from '@/components/ui/Button';
 import { DonateButton } from '@/components/ui/DonateButton';
-import { EventCard } from '@/features/events/EventCard';
+// ...existing code...
 import { UpcomingEventsSection } from '@/features/events/UpcomingEventsSection';
 import { ImpactSection } from '@/features/about/ImpactSection';
 import { branches } from '@/data/branches';
