@@ -134,7 +134,7 @@ export default function AboutPage() {
             Our Guiding Principles
           </h2>
           <p className="text-stone-500 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
-            The values that unite us, shape our community, and drive everything we do across Europe and beyond.
+            The core values that unite us, shape our community, and drive our actions across Europe and beyond.
           </p>
         </div>
 
