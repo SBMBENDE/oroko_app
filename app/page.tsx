@@ -14,7 +14,7 @@ import { getUpcomingEvents } from '@/data/events';
 export const metadata: Metadata = {
   title: 'OCA-EU — United by Culture, Rooted in Africa',
   description:
-    'OCA-EU is an international cultural association connecting the African diaspora across Europe through culture, community, and shared ambition.',
+    'OCA-EU is an international cultural association connecting the Oroko diaspora across Europe through culture, community, and shared ambition.',
 };
 
 const principles = [
@@ -160,7 +160,7 @@ export default function HomePage() {
                 <div className="flex items-center gap-3 border-t border-amber-600/20 pt-4">
                   <div className="w-10 h-10 rounded-full overflow-hidden shrink-0 border-2 border-amber-600/40">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="https://res.cloudinary.com/dkd3k6eau/image/upload/v1766575377/kix9kd3i4kd6vq7wxc32.jpg" alt="Iya Iye" className="w-full h-full object-cover" />
+                    <img src="https://res.cloudinary.com/dkd3k6eau/image/upload/v1773689908/copy_of_iya_iye_good_xg6dck_09c9dd.png" alt="Iya Iye" className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <p className="text-white font-semibold text-sm">Iya Iye</p>
@@ -171,7 +171,7 @@ export default function HomePage() {
               <div className="bg-zinc-800/50 border border-zinc-700 rounded-2xl p-5 flex items-center gap-4">
                 <Globe className="w-8 h-8 text-amber-400 shrink-0" />
                 <div>
-                  <p className="text-white font-bold text-sm">Pan-European Network</p>
+                  <p className="text-white font-bold text-sm">OCA-European Network</p>
                   <p className="text-zinc-400 text-xs">Germany · France · Belgium · UK · Ireland · Finland</p>
                 </div>
               </div>
@@ -189,7 +189,7 @@ export default function HomePage() {
                 Leadership
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-white">
-                Meet our executive board
+                OCA-EU executive board
               </h2>
             </div>
             <Button

@@ -6,17 +6,17 @@ export const projects: Project[] = [
     id: 'proj-scholarship',
     title: 'OROKO Scholarship Fund',
     description:
-      'Annual scholarship programme supporting diaspora students in higher education across Europe.',
+      'A scholarship programme supporting Oroko students back home.',
     longDescription:
-      'The OROKO Scholarship Fund awards annual grants to talented students of African heritage pursuing undergraduate and postgraduate studies across European universities. Since 2018, we have supported over 60 students in fields ranging from law and medicine to engineering and the arts. The fund is sustained by member contributions, corporate partnerships, and annual fundraising events.',
+      'The OROKO Scholarship Fund awards grants to talented students of Oroko heritage pursuing studies in Cameroon. This year 2026, we have supported over 100 students in the Ndian region. The fund is sustained by member contributions, corporate partnerships, and annual fundraising events.',
     status: 'active',
     category: 'education',
-    branchSlugs: ['france', 'uk', 'belgium', 'germany'],
+    branchSlugs: ['cameroon'],
     startDate: '2018-01-01',
     image: '/images/projects/scholarship.jpg',
     tags: ['Education', 'Scholarships', 'Youth'],
     lead: 'Fatou Mensah',
-    impactMetric: '60+ students supported',
+    impactMetric: '100+ students supported',
     website: '#',
   },
   {

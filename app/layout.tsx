@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: '%s — OCA-EU',
   },
   description:
-    'OCA-EU is an international cultural association connecting the African diaspora across Europe.',
+    'OCA-EU is an international cultural association connecting the Oroko diaspora across Europe.',
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,
