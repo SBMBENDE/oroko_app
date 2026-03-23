@@ -18,7 +18,7 @@ export const branches: Branch[] = [
     contactEmail: 'france@oca-eu.org',
     leadership: {
       president: 'Isele Philip',
-      vicePresident: 'Samuel Sakwe',
+        vicePresident: 'Mike Mokobe',
       secretary: 'Tom Tommy',
       treasurer: 'Rose Lombe',
     },
@@ -50,6 +50,7 @@ export const branches: Branch[] = [
       president: 'Celestine Nkosi',
       vicePresident: 'Bernard Osei',
       secretary: 'Miriam Djokoto',
+      treasurer: 'Adaeze Nwosu',
     },
     socialLinks: {
       linkedin: 'https://linkedin.com/company/ocaBelgium',
@@ -75,7 +76,9 @@ export const branches: Branch[] = [
     contactEmail: 'belgium-liege@oca-eu.org',
     leadership: {
       president: 'Sylvain Mbida',
+      vicePresident: 'Placeholder VP',
       secretary: 'Carine Fotso',
+      treasurer: 'Placeholder Treasurer',
     },
     socialLinks: {
       instagram: 'https://instagram.com/ocaBelgiumLiege',
@@ -131,7 +134,9 @@ export const branches: Branch[] = [
     contactEmail: 'uk-teteri@oca-eu.org',
     leadership: {
       president: 'Ayamba Charles',
+      vicePresident: 'Placeholder VP',
       secretary: 'Blessing Asante',
+      treasurer: 'Placeholder Treasurer',
     },
     socialLinks: {
       instagram: 'https://instagram.com/ocaUKManchester',
@@ -159,7 +164,9 @@ export const branches: Branch[] = [
     contactEmail: 'finland@oca-eu.org',
     leadership: {
       president: 'Adwoa Sarkodie',
+      vicePresident: 'Placeholder VP',
       secretary: 'Pekka Mensah',
+      treasurer: 'Placeholder Treasurer',
     },
     socialLinks: {
       instagram: 'https://instagram.com/ocaFinland',
@@ -186,7 +193,9 @@ export const branches: Branch[] = [
     contactEmail: 'ireland@oca-eu.org',
     leadership: {
       president: 'Ngozi Eze',
+      vicePresident: 'Placeholder VP',
       secretary: 'Patrick Mensah',
+      treasurer: 'Placeholder Treasurer',
     },
     socialLinks: {
       instagram: 'https://instagram.com/ocaIreland',
@@ -215,6 +224,8 @@ export const branches: Branch[] = [
     leadership: {
       president: 'Emmanuel Boateng',
       vicePresident: 'Abena Frimpong',
+      secretary: 'Placeholder Secretary',
+      treasurer: 'Placeholder Treasurer',
     },
     socialLinks: {
       linkedin: 'https://linkedin.com/company/ocaGermanyBerlin',
@@ -240,7 +251,9 @@ export const branches: Branch[] = [
     contactEmail: 'germany-hamburg@oca-eu.org',
     leadership: {
       president: 'David Tabi',
+      vicePresident: 'Placeholder VP',
       secretary: 'Sandra Njoku',
+      treasurer: 'Placeholder Treasurer',
     },
     socialLinks: {
       instagram: 'https://instagram.com/ocaGermanyHamburg',
@@ -265,7 +278,9 @@ export const branches: Branch[] = [
     contactEmail: 'germany-munich@oca-eu.org',
     leadership: {
       president: 'Christiane Bello',
+      vicePresident: 'Placeholder VP',
       secretary: 'Felix Nkeng',
+      treasurer: 'Placeholder Treasurer',
     },
     socialLinks: {
       instagram: 'https://instagram.com/ocaGermanyMunich',

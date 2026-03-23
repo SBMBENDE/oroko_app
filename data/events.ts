@@ -15,6 +15,18 @@ export const events: Event[] = [
     featured: true,
   },
   {
+    id: 'evt-fr-2',
+    title: 'African Entrepreneurship Forum',
+    description:
+      'A day-long forum connecting African diaspora entrepreneurs with investors, mentors, and business leaders across Europe.',
+    date: '2026-05-12',
+    location: 'Station F, Paris, France',
+    branchSlug: 'france',
+    image: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1772305307/qa3qliyrnotvpzjcusrs.png',
+    category: 'conference',
+    registrationLink: '#',
+  },
+  {
     id: 'evt-fr-1',
     title: 'OROKO-EU Annual Convention',
     description:
@@ -26,18 +38,6 @@ export const events: Event[] = [
     category: 'celebration',
     registrationLink: '#',
     featured: true,
-  },
-  {
-    id: 'evt-fr-2',
-    title: 'African Entrepreneurship Forum',
-    description:
-      'A day-long forum connecting African diaspora entrepreneurs with investors, mentors, and business leaders across Europe.',
-    date: '2026-05-12',
-    location: 'Station F, Paris, France',
-    branchSlug: 'france',
-    image: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1772305307/qa3qliyrnotvpzjcusrs.png',
-    category: 'conference',
-    registrationLink: '#',
   },
   // {
   //   id: 'evt-uk-1',

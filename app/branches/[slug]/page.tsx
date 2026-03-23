@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { MapPin, Mail, Calendar } from 'lucide-react';
 import { Section, SectionHeading } from '@/components/ui/Section';
-import { MemberCard } from '@/features/members/MemberCard';
+import BranchMembersSection from '@/features/members/BranchMembersSection';
 import { EventCard } from '@/features/events/EventCard';
 import { GalleryGrid } from '@/features/gallery/GalleryGrid';
 import { getBranchBySlug, getAllBranchSlugs } from '@/data/branches';
@@ -28,6 +28,7 @@ export async function generateMetadata({ params }: BranchPageProps): Promise<Met
     description: branch.shortDescription,
   };
 }
+
 
 export default async function BranchPage({ params }: BranchPageProps) {
   const { slug } = await params;
@@ -97,18 +98,7 @@ export default async function BranchPage({ params }: BranchPageProps) {
 
       {/* Members */}
       {members.length > 0 && (
-        <Section>
-          <SectionHeading
-            title="Members"
-            subtitle={`Meet the ${members.length} members driving ${branch.name} forward.`}
-            centered
-          />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {members.map((member) => (
-              <MemberCard key={member.id} member={member} />
-            ))}
-          </div>
-        </Section>
+        <BranchMembersSection members={members} branchName={branch.name} />
       )}
 
       {/* Events */}
