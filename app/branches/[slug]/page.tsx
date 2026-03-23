@@ -66,13 +66,24 @@ export default async function BranchPage({ params }: BranchPageProps) {
                 </a>
               </div>
               <p className="text-stone-300 max-w-2xl leading-relaxed">{branch.description}</p>
-              <div className="mt-6 flex justify-center md:justify-start">
+              <div className="mt-6 flex flex-col md:flex-row gap-3 justify-center md:justify-start items-center">
                 <DonateButton
                   size="md"
                   variant="outline"
                   branchSlug={branch.slug}
                   label={`Donate to ${branch.name}`}
                 />
+                {/* Show branch website link if available */}
+                {branch.socialLinks?.website && (
+                  <a
+                    href={branch.socialLinks.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-4 py-2 border border-amber-500 text-amber-700 rounded-lg font-medium hover:bg-amber-50 transition-colors text-sm"
+                  >
+                    See branch website
+                  </a>
+                )}
               </div>
             </div>
           </div>
