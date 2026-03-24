@@ -3,6 +3,7 @@
 import { useRef, useState, useCallback } from 'react';
 import { gsap } from 'gsap';
 import { Calendar, Users, ExternalLink, RotateCcw } from 'lucide-react';
+import Image from 'next/image';
 import type { Project } from '@/lib/types';
 import { formatDate } from '@/lib/utils';
 import {
@@ -92,13 +93,28 @@ export function FlipProjectCard({ project }: FlipProjectCardProps) {
           className="absolute inset-0 rounded-2xl overflow-hidden shadow-lg"
           style={{ backfaceVisibility: 'hidden' }}
         >
-          {/* Gradient background with parallax travel room (oversized) */}
+          {/* Project image with gradient overlay */}
           <div
             ref={bgRef}
-            className={`absolute inset-[-10%] bg-linear-to-br ${gradient}`}
-          />
+            className="absolute inset-[-10%] rounded-2xl overflow-hidden"
+            style={{ zIndex: 0 }}
+          >
+            {project.image ? (
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                className="object-cover object-center absolute inset-0"
+                style={{ width: '100%', height: '100%' }}
+                sizes="(max-width: 768px) 100vw, 33vw"
+                priority={project.id === 'proj-scholarship'}
+              />
+            ) : (
+              <div className={`absolute inset-0 w-full h-full bg-linear-to-br ${gradient}`} style={{ opacity: 0.75 }} />
+            )}
+          </div>
           {/* Dark vignette for text legibility */}
-          <div className="absolute inset-0 bg-linear-to-t from-black/75 via-black/10 to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-t from-black/75 via-black/10 to-transparent" style={{ zIndex: 1 }} />
 
           {/* Content */}
           <div className="absolute inset-0 flex flex-col justify-between p-5">

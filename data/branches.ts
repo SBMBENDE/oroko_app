@@ -56,6 +56,7 @@ export const branches: Branch[] = [
     socialLinks: {
       linkedin: 'https://linkedin.com/company/ocaBelgium',
       instagram: 'https://instagram.com/ocaBelgium',
+      facebook: 'https://facebook.com/ocaBelgiumBrussels',
       website: 'https://oca-belgium-brussels.org',
     },
     members: [],
@@ -84,6 +85,7 @@ export const branches: Branch[] = [
     },
     socialLinks: {
       instagram: 'https://instagram.com/ocaBelgiumLiege',
+      facebook: 'https://facebook.com/ocaBelgiumLiege',
       website: 'https://oca-belgium-liege.org',
     },
     members: [],
@@ -175,6 +177,7 @@ export const branches: Branch[] = [
     },
     socialLinks: {
       instagram: 'https://instagram.com/ocaFinland',
+      facebook: 'https://facebook.com/ocaFinland',
       website: 'https://oca-finland.org',
     },
     members: [],
@@ -237,6 +240,7 @@ export const branches: Branch[] = [
     socialLinks: {
       linkedin: 'https://linkedin.com/company/ocaGermanyBerlin',
       instagram: 'https://instagram.com/ocaGermanyBerlin',
+      facebook: 'https://facebook.com/ocaGermanyBerlin',
       website: 'https://oroko-berlin.com/', // Added branch website
     },
     members: [],
@@ -265,6 +269,7 @@ export const branches: Branch[] = [
     },
     socialLinks: {
       instagram: 'https://instagram.com/ocaGermanyHamburg',
+      facebook: 'https://facebook.com/ocaGermanyHamburg',
       website: 'https://oca-germany-hamburg.org',
     },
     members: [],
@@ -293,6 +298,7 @@ export const branches: Branch[] = [
     },
     socialLinks: {
       instagram: 'https://instagram.com/ocaGermanyMunich',
+      facebook: 'https://facebook.com/ocaGermanyMunich',
       website: 'https://oca-germany-munich.org',
     },
     members: [],

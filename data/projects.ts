@@ -13,7 +13,7 @@ export const projects: Project[] = [
     category: 'education',
     branchSlugs: ['cameroon'],
     startDate: '2026-08-01',
-    image: '/images/projects/scholarship.jpg',
+    image: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1774305110/annie-spratt-WwSX_X4GrAA-unsplash_trh4j3.jpg',
     tags: ['Education', 'Scholarships', 'Youth'],
     lead: 'Isele Philip',
     impactMetric: '100+ students supported',
@@ -30,7 +30,7 @@ export const projects: Project[] = [
     category: 'entrepreneurship',
     branchSlugs: ['uk', 'france', 'germany'],
     startDate: '2020-03-01',
-    image: '/images/projects/mentorship.jpg',
+    image: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1774304601/oyemike-princewill-JnFKGfAyIUE-unsplash_cvti9v.jpg',
     tags: ['Mentorship', 'Career', 'Leadership'],
     lead: 'Kofi Amponsah',
     impactMetric: '120 mentor-mentee pairs',
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     branchSlugs: ['france', 'belgium', 'uk', 'ireland', 'finland', 'germany'],
     startDate: '2024-09-01',
     endDate: '2026-12-31',
-    image: '/images/projects/oral-history.jpg',
+    image: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773458745/WhatsApp_Image_2026-03-13_at_20.53.02_1_aseri6.jpg',
     tags: ['Heritage', 'Digital Archive', 'Research'],
     lead: 'Chioma Okafor',
     impactMetric: '200+ stories collected',
@@ -65,7 +65,7 @@ export const projects: Project[] = [
     category: 'culture',
     branchSlugs: ['france', 'uk', 'belgium', 'ireland', 'germany', 'finland'],
     startDate: '2016-07-01',
-    image: '/images/projects/festival.jpg',
+    image: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773662784/Screenshot_2026-03-15_at_16.17.46_es5gga.png',
     tags: ['Culture', 'Arts', 'Music', 'Festival'],
     lead: 'Amara Diallo',
     impactMetric: '5,000+ attendees annually',
@@ -101,7 +101,7 @@ export const projects: Project[] = [
     category: 'entrepreneurship',
     branchSlugs: ['france', 'uk', 'germany'],
     startDate: '2022-01-01',
-    image: '/images/projects/startup-hub.jpg',
+    image: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773726894/sam-portfolio_aivstv.jpg',
     tags: ['Entrepreneurship', 'Startups', 'Business'],
     lead: 'Emmanuel Boateng',
     impactMetric: '45 startups supported',
@@ -110,19 +110,19 @@ export const projects: Project[] = [
   // ── Technology ───────────────────────────────────────────────────────────────
   {
     id: 'proj-digital-skills',
-    title: 'Digital Skills Bootcamp',
+    title: 'Borehole',
     description:
       'Free intensive coding and digital literacy courses for diaspora youth and job-seekers.',
     longDescription:
       'The OROKO Digital Skills Bootcamp offers free 8-week intensive courses in web development, data literacy, digital marketing, and UX design for diaspora youth (16–30) and career changers. Courses are delivered both in-person and online, with instructors drawn from OROKO member companies and volunteer tech professionals. Graduates receive an OROKO Digital Certificate.',
     status: 'upcoming',
-    category: 'technology',
+    category: 'development',
     branchSlugs: ['france', 'uk', 'germany'],
     startDate: '2026-06-01',
-    image: '/images/projects/digital-skills.jpg',
+    image: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1774305434/andrew-itaga-e0N0tpl26EU-unsplash_cukr9j.jpg',
     tags: ['Technology', 'Coding', 'Skills', 'Youth'],
     lead: 'Sam Mbende',
-    impactMetric: 'Launching September 2026',
+    impactMetric: 'Launching September 2027',
   },
   // ── Completed ────────────────────────────────────────────────────────────────
   {
@@ -137,7 +137,7 @@ export const projects: Project[] = [
     branchSlugs: ['france', 'uk', 'belgium', 'italy', 'finland'],
     startDate: '2023-01-01',
     endDate: '2024-06-30',
-    image: '/images/projects/health.jpg',
+    image: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773666892/samples/zoom.avif',
     tags: ['Health', 'Wellbeing', 'Community'],
     lead: 'Dr. Naomi Basake',
     impactMetric: '2,000+ people reached',
@@ -162,7 +162,7 @@ export const PROJECT_CATEGORY_COLORS: Record<string, string> = {
   culture: 'bg-pink-100 text-pink-800',
   advocacy: 'bg-red-100 text-red-800',
   health: 'bg-teal-100 text-teal-800',
-  technology: 'bg-blue-100 text-blue-800',
+  development: 'bg-blue-100 text-blue-800',
 };
 
 export function getProjectsByStatus(status: ProjectStatus): Project[] {

@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { MapPin, Mail, Calendar } from 'lucide-react';
+import { MapPin, Mail, Calendar, Facebook, Instagram } from 'lucide-react';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import BranchMembersSection from '@/features/members/BranchMembersSection';
 import { EventCard } from '@/features/events/EventCard';
@@ -73,17 +73,41 @@ export default async function BranchPage({ params }: BranchPageProps) {
                   branchSlug={branch.slug}
                   label={`Donate to ${branch.name}`}
                 />
-                {/* Show branch website link if available */}
-                {branch.socialLinks?.website && (
-                  <a
-                    href={branch.socialLinks.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block px-4 py-2 border border-amber-500 text-amber-700 rounded-lg font-medium hover:bg-amber-50 transition-colors text-sm"
-                  >
-                    See branch website
-                  </a>
-                )}
+                {/* Social links: website, facebook, instagram */}
+                <div className="flex gap-2 items-center">
+                  {branch.socialLinks?.website && (
+                    <a
+                      href={branch.socialLinks.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-4 py-2 border border-amber-500 text-amber-700 rounded-lg font-medium hover:bg-amber-50 transition-colors text-sm"
+                    >
+                      See branch website
+                    </a>
+                  )}
+                  {branch.socialLinks?.facebook && (
+                    <a
+                      href={branch.socialLinks.facebook}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-stone-300 hover:bg-stone-100 transition-colors"
+                      aria-label="Facebook"
+                    >
+                      <Facebook className="w-5 h-5 text-blue-600" />
+                    </a>
+                  )}
+                  {branch.socialLinks?.instagram && (
+                    <a
+                      href={branch.socialLinks.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-stone-300 hover:bg-stone-100 transition-colors"
+                      aria-label="Instagram"
+                    >
+                      <Instagram className="w-5 h-5 text-pink-500" />
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           </div>

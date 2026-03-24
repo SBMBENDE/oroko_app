@@ -49,7 +49,8 @@ export type ProjectCategory =
   | 'culture'
   | 'advocacy'
   | 'health'
-  | 'technology';
+  | 'technology'
+  | 'development';
 
 export interface Project {
   id: string;
