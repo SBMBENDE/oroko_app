@@ -112,7 +112,7 @@ export default function HomePage() {
                 Our Chapters
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
-                Active chapters spread across 6 countries
+                Current Branches
               </h2>
               <div className="divide-y divide-zinc-800">
                 {branches.slice(0, 8).map((branch, i) => (
@@ -189,7 +189,7 @@ export default function HomePage() {
                 Leadership
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-white">
-                OCA-EU executive board
+                OCA-EU Executive
               </h2>
             </div>
             <Button

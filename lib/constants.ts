@@ -2,7 +2,7 @@ import type { NavItem } from './types';
 
 export const SITE_NAME = 'OCA-EU';
 export const SITE_DESCRIPTION =
-  'Uniting Oroko Sons & Daughters across Europe.';
+  'Connecting the Oroko Diaspora across Europe.';
 export const SITE_URL = 'https://oca-eu.org';
 
 export const NAV_ITEMS: NavItem[] = [
