@@ -150,25 +150,25 @@ export default function HomePage() {
             </div>
 
             {/* Quote + network card */}
-            <div className="hidden md:flex flex-col gap-4">
-              <div className="bg-amber-600/10 border border-amber-600/20 rounded-2xl p-7 flex-1">
+            <div className="flex flex-col gap-6 md:gap-4 mt-10 md:mt-0">
+              <div className="bg-amber-600/10 border border-amber-600/20 rounded-2xl p-5 sm:p-7 flex-1 flex flex-col items-center justify-center text-center">
                 <div className="text-amber-400 text-5xl font-serif leading-none mb-4">&quot;</div>
                 <p className="text-zinc-300 text-base leading-relaxed mb-6">
                   OCA-EU brings together the vibrant Oroko diaspora from across Europe, creating a unified
                   voice that honours our heritage while building a better future for our communities.
                 </p>
-                <div className="flex items-center gap-3 border-t border-amber-600/20 pt-4">
-                  <div className="w-10 h-10 rounded-full overflow-hidden shrink-0 border-2 border-amber-600/40">
+                <div className="flex flex-col items-center gap-3 border-t border-amber-600/20 pt-6 w-full">
+                  <div className="w-28 h-40 rounded-2xl overflow-hidden border-4 border-amber-600/40 shadow-lg mb-2 bg-zinc-900">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="https://res.cloudinary.com/dkd3k6eau/image/upload/v1774337808/iya-iye_xiqrap.jpg" alt="Iya Iye" className="w-full h-full object-cover" />
+                    <img src="https://res.cloudinary.com/dkd3k6eau/image/upload/v1774337808/iya-iye_xiqrap.jpg" alt="Iya Iye" className="w-full h-full object-contain" />
                   </div>
                   <div>
-                    <p className="text-white font-semibold text-sm">Iya Iye</p>
-                    <p className="text-amber-400/70 text-xs">President, OCA-EU</p>
+                    <p className="text-white font-bold text-base">Iya Iye</p>
+                    <p className="text-amber-400/80 text-sm">President, OCA-EU</p>
                   </div>
                 </div>
               </div>
-              <div className="bg-zinc-800/50 border border-zinc-700 rounded-2xl p-5 flex items-center gap-4">
+              <div className="bg-zinc-800/50 border border-zinc-700 rounded-2xl p-4 sm:p-5 flex items-center gap-3 sm:gap-4 mt-4">
                 <Globe className="w-8 h-8 text-amber-400 shrink-0" />
                 <div>
                   <p className="text-white font-bold text-sm">OCA-European Network</p>

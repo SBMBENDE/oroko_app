@@ -1,10 +1,11 @@
-'use client';
 
-import { useEffect, useRef } from 'react';
+'use client';
+import { useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { ArrowRight, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
-import { DonateButton } from '@/components/ui/DonateButton';
+import { cn } from '@/lib/utils';
+
 import { animateHero } from '@/animations';
 
 const TRUST_INITIALS = ['II', 'AA', 'ER', 'TI', 'EA'];
@@ -15,14 +16,14 @@ export function HeroSection() {
   const ctaRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!headlineRef.current || !subtitleRef.current || !ctaRef.current) return;
-    const tl = animateHero(headlineRef.current, subtitleRef.current, ctaRef.current);
-    return () => { tl.kill(); };
+    if (headlineRef.current && subtitleRef.current && ctaRef.current) {
+      animateHero(headlineRef.current, subtitleRef.current, ctaRef.current);
+    }
   }, []);
 
   return (
-    <section className="relative bg-zinc-950 min-h-screen flex flex-col justify-center overflow-hidden">
-      {/* Background image */}
+    <section className="relative isolate overflow-hidden min-h-150">
+      {/* Background image overlay */}
       <div
         className="absolute inset-0 z-0"
         aria-hidden="true"
@@ -61,40 +62,68 @@ export function HeroSection() {
 
             <h1
               ref={headlineRef}
-              className="text-[2.6rem] sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-[0.95] tracking-tight mb-4 sm:mb-6"
+              className={cn(
+                "font-display text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white mb-8 sm:mb-10 md:mb-12",
+                "leading-tight sm:leading-tight md:leading-tight",
+                "[text-shadow:0_2px_16px_rgba(0,0,0,0.18)]",
+                "flex flex-col justify-center items-center text-center sm:text-left sm:items-start sm:justify-start sm:flex-none"
+              )}
             >
-              OROKO<br />
-              <span className="text-amber-400">CULTURAL</span><br />
-              <span className="whitespace-nowrap">ASSOCIATION<span className="text-amber-400"> -</span></span>{' '}
-              <span className="text-amber-400 whitespace-nowrap">EUROPE</span>
+              {/* Mobile: stacked, perfectly centered */}
+              <span className="block sm:hidden">
+                <span className="flex flex-col items-start justify-start">
+                  <span className="text-left">OROKO</span>
+                  <span className="text-left text-amber-400">CULTURAL</span>
+                  <span className="text-left">ASSOCIATION</span>
+                  <span className="text-left text-amber-400">EUROPE</span>
+                </span>
+              </span>
+              {/* Desktop: premium two-line look */}
+              <span className="hidden sm:inline">
+                <span style={{ display: 'inline-block', whiteSpace: 'nowrap' }}>
+                  OROKO&nbsp;<span className="text-amber-400">CULTURAL</span>
+                </span><br />
+                <span style={{ display: 'inline-block', whiteSpace: 'nowrap' }}>
+                  ASSOCIATION&nbsp;<span className="text-amber-400">EUROPE</span>
+                </span>
+              </span>
             </h1>
 
-            {/* Badge — mobile only (below headline) */}
-            <div className="inline-flex sm:hidden items-center gap-1.5 rounded-full bg-amber-600/20 border border-amber-600/30 px-3 py-1.5 mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse shrink-0" />
-              <span className="text-[8px] text-amber-300 font-semibold uppercase tracking-wider whitespace-nowrap">
-                United by Culture · Rooted in Africa · Thriving in Europe
-              </span>
+            {/* Our Mission link above subtitle on all screens */}
+            <div className="mb-3 w-full">
+              <Link href="/about" className="text-amber-400 font-semibold text-base hover:underline focus:underline transition-all">
+                Our Mission
+              </Link>
             </div>
+
 
             <p
               ref={subtitleRef}
-              className="text-zinc-400 text-base sm:text-lg max-w-xl leading-relaxed mb-8"
+              className="text-zinc-400 text-sm sm:text-lg max-w-xs sm:max-w-xl leading-snug sm:leading-relaxed mb-2 sm:mb-8 whitespace-nowrap sm:whitespace-normal"
             >
-              OCA-EU connects the Oroko diaspora across Europe through culture, community, and shared ambition.
+              Connecting Oroko communities across Europe.
             </p>
 
-            <div ref={ctaRef} className="flex flex-col sm:flex-row gap-3 mb-10 w-full md:w-auto">
+
+            {/* CTA buttons - spacing tweaked for premium look */}
+            <div ref={ctaRef} className="flex flex-col sm:flex-row gap-3 sm:gap-5 mb-8 sm:mb-10 w-full md:w-auto">
               <Button size="lg" variant="primary" asChild>
                 <Link href="/branches" className="flex items-center gap-2">
                   Explore Branches <ArrowRight className="w-4 h-4 shrink-0" />
                 </Link>
               </Button>
-              <Button size="lg" variant="ghost" className="text-white! bg-white/10 hover:bg-white/20!" asChild>
-                <Link href="/about">Our Mission</Link>
+              {/* Outlined Donate button on mobile only */}
+              <Button
+                size="sm"
+                variant="outline"
+                asChild
+                className="sm:hidden border-amber-400 text-amber-400 font-semibold mt-1"
+              >
+                <Link href="/donate">Donate</Link>
               </Button>
-              <DonateButton size="lg" variant="outline" label="Donate" className="sm:hidden" />
+              {/* Removed old Donate text link on mobile */}
             </div>
+
 
             {/* Trust bar */}
             <div className="flex items-center justify-start gap-4">
@@ -116,65 +145,7 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* ── RIGHT — Floating stat + quote card ── */}
-          <div className="hidden md:block">
-            <div className="bg-zinc-900/70 border border-zinc-800 rounded-2xl p-6 backdrop-blur-sm">
-              {/* Stats 2×2 grid */}
-              <div className="grid grid-cols-2 gap-3 mb-5">
-                {[
-                  { value: '500+', label: 'Members' },
-                  { value: '10',   label: 'Chapters' },
-                  { value: '6+',   label: 'Countries' },
-                  { value: '15+',  label: 'Events/yr' },
-                ].map(({ value, label }) => (
-                  <div key={label} className="bg-zinc-800/70 rounded-xl p-4 text-center">
-                    <span className="text-2xl font-bold text-amber-400 block leading-none">{value}</span>
-                    <span className="text-zinc-500 text-xs mt-1.5 uppercase tracking-widest block">{label}</span>
-                  </div>
-                ))}
-              </div>
 
-              {/* President portrait (desktop only) */}
-              <div className="border-t border-zinc-800 pt-4">
-                <div className="flex items-center justify-between mb-3">
-                  <div>
-                    <p className="text-white font-semibold text-sm">Iya Iye</p>
-                    <p className="text-zinc-500 text-xs">President, OCA-EU</p>
-                  </div>
-                  <span className="text-xs text-amber-400/80 uppercase tracking-widest">Leadership</span>
-                </div>
-                <div className="w-full h-80 rounded-xl overflow-hidden border border-zinc-700/50">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="https://res.cloudinary.com/dkd3k6eau/image/upload/v1774338277/copy_of_iya-iye_xiqrap_820f2c.jpg"
-                    alt="Iya Iye – President, OCA-EU"
-                    className="w-full h-full object-cover object-top"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* President portrait (mobile only, after stats) */}
-          <div className="block md:hidden mt-8">
-            <div className="bg-zinc-900/70 border border-zinc-800 rounded-2xl p-6 backdrop-blur-sm">
-              <div className="flex items-center justify-between mb-3">
-                <div>
-                  <p className="text-white font-semibold text-sm">Iya Iye</p>
-                  <p className="text-zinc-500 text-xs">President, OCA-EU</p>
-                </div>
-                <span className="text-xs text-amber-400/80 uppercase tracking-widest">Leadership</span>
-              </div>
-              <div className="w-full h-72 rounded-xl overflow-hidden border border-zinc-700/50">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="https://res.cloudinary.com/dkd3k6eau/image/upload/v1774338277/copy_of_iya-iye_xiqrap_820f2c.jpg"
-                  alt="Iya Iye – President, OCA-EU"
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-            </div>
-          </div>
 
         </div>
       </div>

@@ -1,7 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 import { Menu, X, Globe } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { NAV_ITEMS, SITE_NAME } from '@/lib/constants';
@@ -10,6 +11,7 @@ import { DonateButton } from '@/components/ui/DonateButton';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -18,6 +20,26 @@ export function Navbar() {
     window.addEventListener('scroll', handler, { passive: true });
     return () => window.removeEventListener('scroll', handler);
   }, []);
+
+  // Animate mobile menu open/close
+  useEffect(() => {
+    if (!menuRef.current) return;
+    if (isOpen) {
+      gsap.fromTo(
+        menuRef.current,
+        { opacity: 0, y: -24, scale: 0.98 },
+        { opacity: 1, y: 0, scale: 1, duration: 0.38, ease: 'power3.out' }
+      );
+    } else {
+      gsap.to(menuRef.current, {
+        opacity: 0,
+        y: -24,
+        scale: 0.98,
+        duration: 0.28,
+        ease: 'power3.in',
+      });
+    }
+  }, [isOpen]);
 
   return (
     <header
@@ -92,7 +114,11 @@ export function Navbar() {
 
         {/* Mobile nav */}
         {isOpen && (
-          <div className="md:hidden bg-white rounded-2xl shadow-lg mb-4 overflow-hidden border border-stone-100">
+          <div
+            ref={menuRef}
+            className="md:hidden bg-white rounded-2xl shadow-lg mb-4 overflow-hidden border border-stone-100"
+            style={{ opacity: 0 }}
+          >
             <ul className="py-2">
               {NAV_ITEMS.map((item) => (
                 <li key={item.href}>
