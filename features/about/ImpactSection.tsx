@@ -55,7 +55,7 @@ export function ImpactSection() {
             Our Impact
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-white">
-            Connecting the Oroko Diaspora across Europe.
+            Connecting the Oroko Diaspora across Europe
           </h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-zinc-800 rounded-2xl overflow-hidden">
