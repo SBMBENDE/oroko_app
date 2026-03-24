@@ -57,7 +57,7 @@ const missionRootsCards = [
 
 const stats = [
   { icon: Globe, value: '6+', label: 'European countries' },
-  { icon: Users, value: '800+', label: 'Active members' },
+  { icon: Users, value: '500+', label: 'Active members' },
   { icon: MapPin, value: '10', label: 'Branches across Europe' },
 ];
 
@@ -110,9 +110,8 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
-        </div>
-
-      </section>
+          </div>
+        </section>
 
       {/* ── Mission + Roots side by side ─────────────────────────────── */}
       <Section className="bg-white">

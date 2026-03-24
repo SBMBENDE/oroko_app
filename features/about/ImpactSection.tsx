@@ -8,7 +8,7 @@ import { Users, MapPin, Globe, Calendar } from 'lucide-react';
 gsap.registerPlugin(ScrollTrigger);
 
 const stats = [
-  { icon: Users,    target: 800, suffix: '+', label: 'Active Members',  desc: 'Registered across all chapters' },
+  { icon: Users,    target: 500, suffix: '+', label: 'Active Members',  desc: 'Registered across all chapters' },
   { icon: MapPin,   target: 10,  suffix: '',  label: 'Chapters',        desc: 'Active chapters across Europe' },
   { icon: Globe,    target: 6,   suffix: '+', label: 'Countries',       desc: 'Nations with OCA-EU presence' },
   { icon: Calendar, target: 15,  suffix: '+', label: 'Events / Year',   desc: 'Cultural gatherings annually' },

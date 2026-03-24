@@ -36,7 +36,7 @@ export function MembersHero() {
         </p>
         <div className="flex flex-wrap gap-6 sm:gap-10">
           {[
-            { value: '800+', label: 'Active members' },
+            { value: '500+', label: 'Active members' },
             { value: '10',   label: 'Branches across Europe' },
             { value: '6+',   label: 'European countries' },
           ].map(({ value, label }) => (

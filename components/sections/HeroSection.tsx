@@ -22,16 +22,29 @@ export function HeroSection() {
 
   return (
     <section className="relative bg-zinc-950 min-h-screen flex flex-col justify-center overflow-hidden">
+      {/* Background image */}
+      <div
+        className="absolute inset-0 z-0"
+        aria-hidden="true"
+        style={{
+          backgroundImage: 'url(https://res.cloudinary.com/dkd3k6eau/image/upload/v1773458728/WhatsApp_Image_2026-03-13_at_20.53.00_1_xwpfzr.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          opacity: 0.22,
+          filter: 'brightness(0.7) saturate(1.1)',
+          pointerEvents: 'none',
+        }}
+      />
       {/* Background pattern */}
       <div
-        className="absolute inset-0 opacity-[0.03]"
+        className="absolute inset-0 opacity-[0.03] z-10"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         }}
       />
       {/* Glows */}
-      <div className="absolute bottom-0 right-0 w-125 h-125 rounded-full bg-amber-600/10 blur-3xl pointer-events-none" />
-      <div className="absolute top-0 left-0 w-100 h-100 rounded-full bg-amber-900/15 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-125 h-125 rounded-full bg-amber-600/10 blur-3xl pointer-events-none z-20" />
+      <div className="absolute top-0 left-0 w-100 h-100 rounded-full bg-amber-900/15 blur-3xl pointer-events-none z-20" />
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-28 sm:py-32">
         <div className="grid md:grid-cols-[1fr_420px] lg:grid-cols-[1fr_460px] gap-10 lg:gap-16 items-center">
@@ -97,7 +110,7 @@ export function HeroSection() {
                 ))}
               </div>
               <div>
-                <p className="text-white font-semibold text-sm">800+ Active Members</p>
+                <p className="text-white font-semibold text-sm">500+ Active Members</p>
                 <p className="text-zinc-500 text-xs">Across 6 European countries</p>
               </div>
             </div>
@@ -109,7 +122,7 @@ export function HeroSection() {
               {/* Stats 2×2 grid */}
               <div className="grid grid-cols-2 gap-3 mb-5">
                 {[
-                  { value: '800+', label: 'Members' },
+                  { value: '500+', label: 'Members' },
                   { value: '10',   label: 'Chapters' },
                   { value: '6+',   label: 'Countries' },
                   { value: '15+',  label: 'Events/yr' },
