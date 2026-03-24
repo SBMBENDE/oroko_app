@@ -68,7 +68,7 @@ export function HeroSection() {
               ref={subtitleRef}
               className="text-zinc-400 text-base sm:text-lg max-w-xl leading-relaxed mb-8"
             >
-              OCA-EU connects the African diaspora across Europe through culture, community, and shared ambition.
+              OCA-EU connects the Oroko diaspora across Europe through culture, community, and shared ambition.
             </p>
 
             <div ref={ctaRef} className="flex flex-col sm:flex-row gap-3 mb-10 w-full md:w-auto">
@@ -133,7 +133,7 @@ export function HeroSection() {
                 <div className="w-full h-80 rounded-xl overflow-hidden border border-zinc-700/50">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="https://res.cloudinary.com/dkd3k6eau/image/upload/v1773689908/copy_of_iya_iye_good_xg6dck_09c9dd.png"
+                    src="https://res.cloudinary.com/dkd3k6eau/image/upload/v1774338277/copy_of_iya-iye_xiqrap_820f2c.jpg"
                     alt="Iya Iye – President, OCA-EU"
                     className="w-full h-full object-cover object-top"
                   />
@@ -155,7 +155,7 @@ export function HeroSection() {
               <div className="w-full h-72 rounded-xl overflow-hidden border border-zinc-700/50">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://res.cloudinary.com/dkd3k6eau/image/upload/v1773689908/copy_of_iya_iye_good_xg6dck_09c9dd.png"
+                  src="https://res.cloudinary.com/dkd3k6eau/image/upload/v1774338277/copy_of_iya-iye_xiqrap_820f2c.jpg"
                   alt="Iya Iye – President, OCA-EU"
                   className="w-full h-full object-cover object-top"
                 />

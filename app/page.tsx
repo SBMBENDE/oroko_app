@@ -160,7 +160,7 @@ export default function HomePage() {
                 <div className="flex items-center gap-3 border-t border-amber-600/20 pt-4">
                   <div className="w-10 h-10 rounded-full overflow-hidden shrink-0 border-2 border-amber-600/40">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="https://res.cloudinary.com/dkd3k6eau/image/upload/v1773689908/copy_of_iya_iye_good_xg6dck_09c9dd.png" alt="Iya Iye" className="w-full h-full object-cover" />
+                    <img src="https://res.cloudinary.com/dkd3k6eau/image/upload/v1774337808/iya-iye_xiqrap.jpg" alt="Iya Iye" className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <p className="text-white font-semibold text-sm">Iya Iye</p>
