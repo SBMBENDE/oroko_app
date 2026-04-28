@@ -161,7 +161,7 @@ export function Footer() {
                 Get OCA-EU updates in your inbox
               </h3>
               <p className="text-stone-400 text-sm mt-2 leading-relaxed">
-                Events, news, and community stories from all six European chapters — straight to you.
+                Events, news, and community stories from all ten European chapters — straight to you.
               </p>
             </div>
             <div className="w-full md:w-auto">
