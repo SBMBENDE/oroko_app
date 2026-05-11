@@ -182,6 +182,14 @@ export function Footer() {
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white transition-colors">Terms of Use</Link>
             <Link href="/constitution" className="hover:text-white transition-colors">Our Constitution</Link>
+            <a
+              href="https://portfolio-2026-nine-weld.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors"
+            >
+              Contact Developer
+            </a>
           </div>
         </div>
       </div>
