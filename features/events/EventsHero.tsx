@@ -25,8 +25,8 @@ export function EventsHero() {
         Events
       </h1>
       <p ref={bodyRef} className="text-stone-300 text-lg leading-relaxed">
-        From cultural galas to professional workshops, OCA-EU hosts events
-        that bring our communities together and create lasting connections.
+        From Annual conventions and cultural galas to professional workshops, OCA-EU hosts events
+        that bring our communities together and create lasting memories.
       </p>
     </div>
   );

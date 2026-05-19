@@ -34,7 +34,7 @@ export const events: Event[] = [
     date: '2026-08-15',
     location: 'Paris, France',
     branchSlug: 'france',
-    image: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773723683/OCA-EU_ciwtoj.png',
+    image: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1779229963/oroko_convention_flyer_dga2hw.jpg',
     category: 'celebration',
     registrationLink: '#',
     featured: true,

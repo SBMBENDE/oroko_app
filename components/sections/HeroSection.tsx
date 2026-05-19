@@ -140,7 +140,7 @@ export function HeroSection() {
               </div>
               <div>
                 <p className="text-white font-semibold text-sm">500+ Active Members</p>
-                <p className="text-zinc-500 text-xs">Across 6 European countries</p>
+                <p className="text-zinc-500 text-xs">Across 7+ European countries</p>
               </div>
             </div>
           </div>
