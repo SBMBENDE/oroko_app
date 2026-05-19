@@ -11,16 +11,16 @@ export const metadata: Metadata = {
 };
 
 const branchPresidents = [
-  { branch: 'Oroko Badenwurtenburg', president: 'Ekue Roland',         flag: '🇩🇪' },
+  { branch: 'Oroko Badenwurtenburg', president: 'Tata Ekwe Roland',    flag: '🇩🇪' },
   { branch: 'OCA NRW Germany',        president: 'Iya Iye',             flag: '🇩🇪' },
   { branch: 'OCA Belgium',            president: 'Tata Enyanga Bato',   flag: '🇧🇪' },
-  { branch: 'OCA France',             president: 'Isele Philip',        flag: '🇫🇷' },
-  { branch: 'OCA Berlin',             president: 'Beloe',               flag: '🇩🇪' },
-  { branch: 'OCA UK',                 president: 'Mildred Motoko',      flag: '🇬🇧' },
-  { branch: 'OCA UK (Teteri)',         president: 'Ayamba Charles',      flag: '🇬🇧' },
-  { branch: 'OCA Belgium',            president: 'Dieudonne',           flag: '🇧🇪' },
-  { branch: 'OCA Ireland',            president: 'Makia',               flag: '🇮🇪' },
-  { branch: 'Oroko Finland',          president: 'Okie Epah Alphonse',  flag: '🇫🇮' },
+  { branch: 'OCA France',             president: 'Tata Isele Philip',   flag: '🇫🇷' },
+  { branch: 'OCA Berlin',             president: 'Iya Beloe',           flag: '🇩🇪' },
+  { branch: 'OCA UK',                 president: 'Iya Mildred Motoko',  flag: '🇬🇧' },
+  { branch: 'OCA UK (Teteri)',         president: 'Tata Ayamba Charles', flag: '🇬🇧' },
+  { branch: 'OCA Belgium',            president: 'Tata Dieudonne',      flag: '🇧🇪' },
+  { branch: 'OCA Ireland',            president: 'Tata Makia',          flag: '🇮🇪' },
+  { branch: 'Oroko Finland',          president: 'Tata Okie Epah Alphonse', flag: '🇫🇮' },
 ];
 
 export default function MembersPage() {

@@ -15,7 +15,7 @@ export const projects: Project[] = [
     startDate: '2026-08-01',
     image: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1774305110/annie-spratt-WwSX_X4GrAA-unsplash_trh4j3.jpg',
     tags: ['Education', 'Scholarships', 'Youth'],
-    lead: 'Isele Philip',
+    lead: 'Tata Isele Philip',
     impactMetric: '100+ students supported',
     website: '#',
   },

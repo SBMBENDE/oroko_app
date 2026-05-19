@@ -17,7 +17,7 @@ export const branches: Branch[] = [
     coverImage: '/images/branches/france/cover.jpg',
     contactEmail: 'france@oca-eu.org',
     leadership: {
-      president: 'Isele Philip',
+      president: 'Tata Isele Philip',
         vicePresident: 'Mike Mokobe',
       secretary: 'Mista Tom',
       treasurer: 'Rose Lombe',
@@ -109,7 +109,7 @@ export const branches: Branch[] = [
     coverImage: '/images/branches/uk/cover.jpg',
     contactEmail: 'uk-london@oca-eu.org',
     leadership: {
-      president: 'Mildred Motoko',
+      president: 'Iya Mildred Motoko',
       vicePresident: 'Naomi Adeyemi',
       secretary: 'Samuel Owusu',
       treasurer: 'Grace Abiodun',
@@ -139,7 +139,7 @@ export const branches: Branch[] = [
     coverImage: '/images/branches/uk/cover.jpg',
     contactEmail: 'uk-teteri@oca-eu.org',
     leadership: {
-      president: 'Ayamba Charles',
+      president: 'Tata Ayamba Charles',
       vicePresident: 'Placeholder VP',
       secretary: 'Blessing Asante',
       treasurer: 'Placeholder Treasurer',

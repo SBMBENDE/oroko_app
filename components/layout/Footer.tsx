@@ -177,16 +177,18 @@ export function Footer() {
       {/* ── Bottom bar ───────────────────────────────────────────────────────── */}
       <div className="border-t border-stone-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-stone-500">
-          <p>© {new Date().getFullYear()} OCA-EU. All rights reserved.</p>
-          <div className="flex items-center gap-5">
-            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-white transition-colors">Terms of Use</Link>
-            <Link href="/constitution" className="hover:text-white transition-colors">Our Constitution</Link>
+          <p className="text-center sm:text-left">© {new Date().getFullYear()} OCA-EU. All rights reserved.</p>
+          <div className="flex flex-wrap justify-center sm:flex-nowrap items-center gap-y-2 text-xs text-stone-500">
+            <Link href="/privacy" className="hover:text-white transition-colors px-3">Privacy Policy</Link>
+            <span className="text-stone-700 select-none">|</span>
+            <Link href="/terms" className="hover:text-white transition-colors px-3">Terms of Use</Link>
+            <span className="text-stone-700 select-none">|</span>
+            <Link href="/constitution" className="hover:text-white transition-colors px-3">Our Constitution</Link>
             <a
               href="https://portfolio-2026-nine-weld.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white transition-colors"
+              className="text-[10px] text-amber-400 hover:text-amber-300 transition-colors px-3 tracking-wide mt-1 sm:mt-0"
             >
               Contact Developer
             </a>
