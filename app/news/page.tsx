@@ -4,6 +4,8 @@ import { Card, CardContent } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { formatDate } from '@/lib/utils';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'News — OCA-EU',
   description: 'Latest news and updates from OCA-EU and our branches across Europe.',

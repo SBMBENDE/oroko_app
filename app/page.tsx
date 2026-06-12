@@ -11,6 +11,8 @@ import { branches } from '@/data/branches';
 import { members } from '@/data/members';
 import { getUpcomingEvents } from '@/data/events';
 
+export const revalidate = 86400; // ISR: revalidate once per day
+
 export const metadata: Metadata = {
   title: 'OCA-EU — United by Culture, Rooted in Africa',
   description:

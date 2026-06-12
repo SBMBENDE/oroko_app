@@ -46,7 +46,7 @@ export async function POST(request: Request) {
     console.error('Stripe error:', err);
     return NextResponse.json(
       { error: 'Unable to create payment. Please try again.' },
-      { status: 500 }
+      { status: 500, headers: { 'Cache-Control': 'no-store' } }
     );
   }
 }

@@ -5,8 +5,8 @@ const pwaConfig = withPWA({
   dest: 'public',
   register: true,
   disable: process.env.NODE_ENV === 'development',
-  cacheOnFrontEndNav: true,
-  aggressiveFrontEndNavCaching: true,
+  cacheOnFrontEndNav: false,
+  aggressiveFrontEndNavCaching: false,
   reloadOnOnline: true,
   workboxOptions: {
     disableDevLogs: true,
@@ -32,20 +32,19 @@ const pwaConfig = withPWA({
       },
       {
         urlPattern: /\.(?:jpg|jpeg|gif|png|svg|ico|webp)$/i,
-        handler: 'StaleWhileRevalidate',
+        handler: 'CacheFirst',
         options: {
           cacheName: 'image-cache',
           expiration: { maxEntries: 64, maxAgeSeconds: 30 * 24 * 60 * 60 },
+          cacheableResponse: { statuses: [0, 200] },
         },
       },
       {
-        urlPattern: /^https?.*/,
-        handler: 'NetworkFirst',
+        urlPattern: /\.(?:js|css)$/i,
+        handler: 'StaleWhileRevalidate',
         options: {
-          cacheName: 'oca-dynamic-cache',
-          expiration: { maxEntries: 128, maxAgeSeconds: 24 * 60 * 60 },
-          networkTimeoutSeconds: 10,
-          cacheableResponse: { statuses: [0, 200] },
+          cacheName: 'static-resources',
+          expiration: { maxEntries: 64, maxAgeSeconds: 7 * 24 * 60 * 60 },
         },
       },
     ],

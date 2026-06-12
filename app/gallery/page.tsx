@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { GalleryGrid } from '@/features/gallery/GalleryGrid';
 import { galleryItems, galleryCategories } from '@/data/gallery';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'Gallery — OCA-EU',
   description:

@@ -8,6 +8,8 @@ import {
 } from '@/data/projects';
 import { Lightbulb, CheckCircle, Clock } from 'lucide-react';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'Projects — OCA-EU',
   description:

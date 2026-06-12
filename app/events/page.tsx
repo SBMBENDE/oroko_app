@@ -4,6 +4,8 @@ import { EventGrid } from '@/features/events/EventGrid';
 import { EventsHero } from '@/features/events/EventsHero';
 import { getAllEvents } from '@/data/events';
 
+export const revalidate = 86400; // ISR: revalidate once per day
+
 export const metadata: Metadata = {
   title: 'Events — OCA-EU',
   description:

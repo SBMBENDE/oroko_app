@@ -11,6 +11,8 @@ import { getEventsByBranch } from '@/data/events';
 import { Badge } from '@/components/ui/Badge';
 import { DonateButton } from '@/components/ui/DonateButton';
 
+export const dynamic = 'force-static';
+
 interface BranchPageProps {
   params: Promise<{ slug: string }>;
 }

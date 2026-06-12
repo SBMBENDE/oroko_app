@@ -5,6 +5,8 @@ import { ScrollText, ArrowLeft } from 'lucide-react';
 import { TocAccordion } from '@/features/constitution/TocAccordion';
 import { ArticlesAccordion } from '@/features/constitution/ArticlesAccordion';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'Constitution — OCA-EU',
   description:

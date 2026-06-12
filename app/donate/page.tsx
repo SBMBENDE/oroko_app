@@ -4,6 +4,8 @@ import { Section } from '@/components/ui/Section';
 import { DonationForm } from '@/features/donate/DonationForm';
 import { Heart, Shield, Users, Globe } from 'lucide-react';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'Donate — OCA-EU',
   description:

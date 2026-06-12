@@ -3,6 +3,8 @@ import { Section, SectionHeading } from '@/components/ui/Section';
 import { BranchLogoGrid } from '@/features/branches/BranchLogoGrid';
 import { branches } from '@/data/branches';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'Branches — OCA-EU',
   description:

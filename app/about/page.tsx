@@ -6,6 +6,8 @@ import { ArrowRight, MapPin, Users, Globe } from 'lucide-react';
 import { ClanSection } from '@/features/about/ClanSection';
 import { ValuesGrid } from '@/features/about/ValuesGrid';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'About OCA-EU',
   description:

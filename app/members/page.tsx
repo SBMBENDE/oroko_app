@@ -4,6 +4,8 @@ import { MembersHero } from '@/features/members/MembersHero';
 import { ExecutivesSection } from '@/features/members/ExecutivesSection';
 import { DonateButton } from '@/components/ui/DonateButton';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'Members — OCA-EU',
   description:
