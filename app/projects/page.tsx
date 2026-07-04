@@ -41,8 +41,7 @@ export default function ProjectsPage() {
           </p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Projects & Initiatives</h1>
           <p className="text-stone-300 text-lg leading-relaxed">
-            From scholarship funds to cultural festivals, OCA-EU runs impactful
-            programmes that create lasting change across our European network.
+            Every OROKO-EU initiative is designed to strengthen our communities through quality education, cultural preservation, better health, and sustainable development. Together, we&apos;re building a more resilient future.
           </p>
         </div>
       </Section>

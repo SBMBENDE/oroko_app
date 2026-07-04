@@ -53,6 +53,8 @@ const pwaConfig = withPWA({
 
 const nextConfig: NextConfig = {
   images: {
+    dangerouslyAllowSVG: true,
+    contentDispositionType: 'attachment',
     remotePatterns: [
       { protocol: 'https', hostname: 'ui-avatars.com' },
       { protocol: 'https', hostname: 'images.unsplash.com' },

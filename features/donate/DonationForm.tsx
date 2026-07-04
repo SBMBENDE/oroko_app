@@ -342,7 +342,7 @@ export function DonationForm() {
                   type="text"
                   value={form.name}
                   onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))}
-                  placeholder="Jean-Pierre Mbeki"
+                  placeholder="Sam Mbende"
                   className="w-full rounded-xl border border-stone-200 px-4 py-3 text-sm outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition"
                   required
                 />

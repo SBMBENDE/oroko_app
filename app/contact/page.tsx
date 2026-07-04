@@ -21,10 +21,9 @@ export default function ContactPage() {
           <p className="text-amber-400 text-sm font-medium uppercase tracking-widest mb-3">
             Get in Touch
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact OCA-EU</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Connect with OCA-EU</h1>
           <p className="text-stone-300 text-lg leading-relaxed">
-            Interested in joining, partnering, or just want to learn more? We&apos;d
-            love to hear from you.
+            We welcome inquiries from members, partners, supporters, volunteers, and the wider community. Whether you&apos;re looking to collaborate, participate in our initiatives, or learn more about our mission, we&apos;re here to help and look forward to hearing from you.
           </p>
         </div>
       </Section>

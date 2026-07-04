@@ -67,7 +67,7 @@ export const projects: Project[] = [
     startDate: '2016-07-01',
     image: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773662784/Screenshot_2026-03-15_at_16.17.46_es5gga.png',
     tags: ['Culture', 'Arts', 'Music', 'Festival'],
-    lead: 'Amara Diallo',
+    lead: 'Iya Nalova',
     impactMetric: '5,000+ attendees annually',
     website: '#',
   },
@@ -126,21 +126,21 @@ export const projects: Project[] = [
   },
   // ── Completed ────────────────────────────────────────────────────────────────
   {
-    id: 'proj-health-campaign',
-    title: 'Oroko Diaspora Health Awareness Campaign',
+    id: 'proj-idp-education',
+    title: 'Education Support for Internally Displaced Children',
     description:
-      'A community health initiative addressing health literacy and access for the Oroko diaspora.',
+      'Supporting 100 IDP students in the Ndian Division by covering school fees, helping vulnerable children return to the classroom.',
     longDescription:
-      'Delivered in partnership with healthcare professionals and NGOs, this campaign ran across five countries and focused on preventive health, mental health awareness, and navigating European healthcare systems. The campaign included free health screening days, multilingual health guides, and online webinars with medical professionals.',
+      'This year, OCA-EU supported the education of 100 internally displaced (IDP) students in the Ndian Division, Cameroon, by covering school fees, helping vulnerable children return to the classroom despite the challenges caused by displacement and conflict.\n\nThis initiative eased the financial burden on affected families, reduced barriers to education, and ensured that children could continue learning in a safe and supportive environment. Through this project, OCA reaffirmed its commitment to promoting equal access to quality education and empowering the next generation.\n\n**Impact:**\n- 100 IDP students supported\n- School fees paid for the academic year 2025/2026\n- Improved access to education for conflict-affected children\n- Contributed to educational continuity and community resilience',
     status: 'completed',
-    category: 'health',
-    branchSlugs: ['france', 'uk', 'belgium', 'italy', 'finland'],
-    startDate: '2023-01-01',
-    endDate: '2024-06-30',
-    image: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1773666892/samples/zoom.avif',
-    tags: ['Health', 'Wellbeing', 'Community'],
-    lead: 'Dr. Naomi Basake',
-    impactMetric: '2,000+ people reached',
+    category: 'education',
+    branchSlugs: ['cameroon'],
+    startDate: '2025-09-01',
+    endDate: '2026-06-30',
+    image: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1774305110/annie-spratt-WwSX_X4GrAA-unsplash_trh4j3.jpg',
+    tags: ['Education', 'IDP', 'Cameroon', 'Youth'],
+    lead: 'OCA-EU Executive Committee',
+    impactMetric: '100 IDP students supported',
   },
 ];
 

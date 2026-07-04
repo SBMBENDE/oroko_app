@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { Providers } from '@/components/Providers';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -48,9 +49,11 @@ export default function RootLayout({
         <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
       </head>
       <body className="antialiased bg-white text-stone-900 font-sans">
-        <Navbar />
-        <div className="min-h-screen">{children}</div>
-        <Footer />
+        <Providers>
+          <Navbar />
+          <div className="min-h-screen">{children}</div>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

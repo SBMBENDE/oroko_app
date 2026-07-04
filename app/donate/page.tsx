@@ -29,12 +29,11 @@ export default function DonatePage() {
             <span className="text-sm text-amber-300 font-medium">Support OCA-EU</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-            Fuel the Future of Our{' '}
-            <span className="text-amber-400">Community</span>
+            Empower Lives. Build Stronger{' '}
+            <span className="text-amber-400">Communities</span>
           </h1>
           <p className="text-stone-300 text-lg leading-relaxed">
-            Every donation — large or small — helps us run scholarships, cultural
-            festivals, mentorship programmes, and advocacy work across Europe. Thank you.
+            Every contribution helps expand access to education, improve health, preserve our cultural heritage, and advance sustainable community development. Together, we create lasting impact.
           </p>
         </div>
       </Section>
@@ -94,10 +93,10 @@ export default function DonatePage() {
                 <h3 className="font-bold text-stone-900 text-sm mb-2">Where does it go?</h3>
                 <div className="space-y-2">
                   {[
-                    { label: 'Education & Scholarships', pct: 35 },
-                    { label: 'Cultural Programmes', pct: 25 },
-                    { label: 'Mentorship & Careers', pct: 20 },
-                    { label: 'Advocacy & Welfare', pct: 20 },
+                    { label: 'ICT Education & Scholarships', pct: 35 },
+                    { label: 'Cultural Preservation', pct: 25 },
+                    { label: 'Health & Well-being', pct: 20 },
+                    { label: 'Sustainable Development', pct: 20 },
                   ].map(({ label, pct }) => (
                     <div key={label}>
                       <div className="flex justify-between text-xs text-stone-500 mb-1">
@@ -120,7 +119,7 @@ export default function DonatePage() {
                   &quot;The OROKO scholarship changed everything for my daughter. We are
                   forever grateful to everyone who gives.&quot;
                 </p>
-                <p className="mt-3 text-xs font-semibold text-amber-400">— Sylvie K., OROKO France member</p>
+                <p className="mt-3 text-xs font-semibold text-amber-400">— Motale Sylvie, [ Bekora Village Beneficiary ]</p>
               </div>
             </div>
           </div>

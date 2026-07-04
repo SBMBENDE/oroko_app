@@ -4,7 +4,12 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { Users } from 'lucide-react';
 
-export function MembersHero() {
+interface MembersHeroProps {
+  activeCount?: number;
+  chapterCount?: number;
+}
+
+export function MembersHero({ activeCount, chapterCount }: MembersHeroProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -36,8 +41,8 @@ export function MembersHero() {
         </p>
         <div className="flex flex-wrap gap-6 sm:gap-10">
           {[
-            { value: '500+', label: 'Active members' },
-            { value: '10',   label: 'Branches across Europe' },
+            { value: activeCount ? `${activeCount}+` : '500+', label: 'Active members' },
+            { value: chapterCount ? `${chapterCount}` : '10',   label: 'Branches across Europe' },
             { value: '6+',   label: 'European countries' },
           ].map(({ value, label }) => (
             <div key={label} className="hero-stat flex items-center gap-3" style={{ opacity: 0 }}>
