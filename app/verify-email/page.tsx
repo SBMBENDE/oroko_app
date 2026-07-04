@@ -1,11 +1,12 @@
 'use client';
 
+import { Suspense } from 'react';
 import { useEffect, useState } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { authApi } from '@/lib/api/auth.api';
 
-export default function VerifyEmailPage() {
+function VerifyEmailContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const token = searchParams.get('token');
@@ -58,5 +59,13 @@ export default function VerifyEmailPage() {
         )}
       </div>
     </main>
+  );
+}
+
+export default function VerifyEmailPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-stone-950 flex items-center justify-center"><div className="w-8 h-8 border-4 border-amber-400 border-t-transparent rounded-full animate-spin" /></div>}>
+      <VerifyEmailContent />
+    </Suspense>
   );
 }
