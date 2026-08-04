@@ -8,7 +8,7 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
   title: 'Branches — OCA-EU',
   description:
-    'Discover OCA-EU chapters across Europe — France, Belgium, UK, Finland, Ireland, and Germany.',  
+    'Discover OCA-EU chapters across Europe — France, Belgium, UK, Finland, Sweden, Ireland, and Germany.',
 };
 
 export default function BranchesPage() {

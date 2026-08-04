@@ -68,9 +68,9 @@ export function Footer() {
             <p className="text-sm text-stone-400 leading-relaxed mt-1">{SITE_DESCRIPTION}</p>
           </div>
           <div className="flex flex-col gap-2 text-sm text-stone-400">
-            <a href="mailto:contact@oca-eu.org" className="inline-flex items-center gap-2 hover:text-white transition-colors">
+            <a href="mailto:orokoeu@gmail.com" className="inline-flex items-center gap-2 hover:text-white transition-colors">
               <Mail className="w-4 h-4 text-amber-500 shrink-0" />
-              contact@oca-eu.org
+              orokoeu@gmail.com
             </a>
             <a href="tel:+33123456789" className="inline-flex items-center gap-2 hover:text-white transition-colors">
               <Phone className="w-4 h-4 text-amber-500 shrink-0" />

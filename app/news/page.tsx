@@ -15,30 +15,30 @@ export const metadata: Metadata = {
 const articles = [
   {
     id: 'news-1',
-    title: 'OCA-EU Expands to Portugal with New Lisbon Chapter',
+    title: 'OCA-EU Expands to Sweden with New Stockholm Chapter',
     excerpt:
-      'We are thrilled to announce the launch of our newest chapter in Lisbon, Portugal — bringing OCA-EU\'s network to seven countries.',
-    date: '2026-02-14',
+      'We are thrilled to announce the launch of our newest chapter in Stockholm, Sweden — bringing OCA-EU\'s network to eight countries.',
+    date: '2026-07-14',
     category: 'Announcement',
     author: 'OCA-EU Communications',
-    image: '/images/news/lisbon-chapter.jpg',
+    image: '/images/news/stockholm-chapter.jpg',
   },
   {
     id: 'news-2',
-    title: '2025 Annual Report: Growth, Impact, and Community',
+    title: 'OROKO-EUROPE PARIS CONVENTION 2026 – PREPARATIONS IN FULL SWING',
     excerpt:
-      'Our 2025 annual report highlights a record year for OCA-EU — over 800 members, 60+ events, and expanded outreach across six countries.',
-    date: '2026-01-30',
+      'The countdown is on! With the Annual OROKO-Europe Paris Convention scheduled for 15 August 2026, preparations are progressing steadily, and the Local Organising Committee is working tirelessly to ensure a successful and memorable event.',
+    date: '2026-08-30',
     category: 'Report',
     author: 'OCA-EU Board',
-    image: '/images/news/annual-report-2025.jpg',
+    image: '/images/news/annual-report-2026.jpg',
   },
   {
     id: 'news-3',
-    title: 'OROKO UK Wins Community Impact Award 2025',
+    title: 'OROKO UK Fundraiser Wins Community Impact Award',
     excerpt:
       'The OROKO UK chapter has been recognised with the prestigious Community Impact Award for its mentorship and entrepreneurship initiatives.',
-    date: '2025-12-10',
+    date: '2026-12-10',
     category: 'Award',
     author: 'OROKO UK Chapter',
     image: '/images/news/uk-award.jpg',
@@ -48,7 +48,7 @@ const articles = [
     title: 'New Youth Programme Launches Across All Branches',
     excerpt:
       'OCA-EU is proud to launch the OROKO Youth Initiative — a structured programme supporting diaspora youth aged 18–30 in education and career development.',
-    date: '2025-11-05',
+    date: '2026-11-05',
     category: 'Programme',
     author: 'OCA-EU',
     image: '/images/news/youth-programme.jpg',

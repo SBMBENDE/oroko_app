@@ -18,9 +18,9 @@ export const branches: Branch[] = [
     contactEmail: 'france@oca-eu.org',
     leadership: {
       president: 'Tata Isele Philip',
-        vicePresident: 'Mike Mokobe',
-      secretary: 'Mista Tom',
-      treasurer: 'Rose Lombe',
+        vicePresident: 'Tata Mokobe',
+      secretary: 'Tata Tom',
+      treasurer: 'Iya Rose Lombe',
     },
     socialLinks: {
       facebook: 'https://facebook.com/ocaFrance',
@@ -48,10 +48,10 @@ export const branches: Branch[] = [
     coverImage: '/images/branches/belgium/cover.jpg',
     contactEmail: 'belgium@oca-eu.org',
     leadership: {
-      president: 'Celestine Nkosi',
-      vicePresident: 'Bernard Osei',
-      secretary: 'Miriam Djokoto',
-      treasurer: 'Adaeze Nwosu',
+      president: 'Tata Bato Gospel',
+      vicePresident: 'Iya VP',
+      secretary: 'Iya Secretary',
+      treasurer: 'Iya Treasurer',
     },
     socialLinks: {
       linkedin: 'https://linkedin.com/company/ocaBelgium',
@@ -78,10 +78,10 @@ export const branches: Branch[] = [
     coverImage: '/images/branches/belgium/cover.jpg',
     contactEmail: 'belgium-liege@oca-eu.org',
     leadership: {
-      president: 'Sylvain Mbida',
-      vicePresident: 'Placeholder VP',
-      secretary: 'Carine Fotso',
-      treasurer: 'Placeholder Treasurer',
+      president: 'Tata Didi',
+      vicePresident: 'Iya VP',
+      secretary: 'Iya Secretary',
+      treasurer: 'Tata Treasurer',
     },
     socialLinks: {
       instagram: 'https://instagram.com/ocaBelgiumLiege',
@@ -139,10 +139,10 @@ export const branches: Branch[] = [
     coverImage: '/images/branches/uk/cover.jpg',
     contactEmail: 'uk-teteri@oca-eu.org',
     leadership: {
-      president: 'Tata Ayamba Charles',
-      vicePresident: 'Placeholder VP',
-      secretary: 'Blessing Asante',
-      treasurer: 'Placeholder Treasurer',
+      president: 'Tata Ayamba',
+      vicePresident: 'Iya Colette VP',
+      secretary: 'Iya Secretary',
+      treasurer: 'Iya Treasurer',
     },
     socialLinks: {
       instagram: 'https://instagram.com/ocaUKManchester',
@@ -170,15 +170,46 @@ export const branches: Branch[] = [
     coverImage: '/images/branches/finland/cover.jpg',
     contactEmail: 'finland@oca-eu.org',
     leadership: {
-      president: 'Adwoa Sarkodie',
+      president: 'Tata Alphonse',
       vicePresident: 'Placeholder VP',
-      secretary: 'Pekka Mensah',
-      treasurer: 'Placeholder Treasurer',
+      secretary: 'Iya Secretary',
+      treasurer: 'Tata Treasurer',
     },
     socialLinks: {
       instagram: 'https://instagram.com/ocaFinland',
       facebook: 'https://facebook.com/ocaFinland',
       website: 'https://oca-finland.org',
+    },
+    members: [],
+    events: [],
+    gallery: [],
+  },
+
+  // ── Sweden (1) ─────────────────────────────────────────────────────────────
+  {
+    id: 'branch-se',
+    name: 'OCA Sweden',
+    country: 'Sweden',
+    slug: 'sweden',
+    city: 'Stockholm',
+    flag: '🇸🇪',
+    founded: '2026',
+    shortDescription: 'A growing Nordic chapter rooted in Stockholm.',
+    description:
+      'OCA Sweden is our Nordic chapter in Stockholm, bringing together Oroko diaspora members across Sweden. We focus on cultural exchange, youth leadership, professional support, and community-building across the region.',
+    logo: 'https://res.cloudinary.com/dkd3k6eau/image/upload/v1785811566/OROKO-SWEDEN_fbxogp.png',
+    coverImage: '/images/branches/sweden/cover.jpg',
+    contactEmail: 'sweden@oca-eu.org',
+    leadership: {
+      president: 'Tata President',
+      vicePresident: 'Iya VP',
+      secretary: 'Tata Secretary',
+      treasurer: 'Iya Treasurer',
+    },
+    socialLinks: {
+      instagram: 'https://instagram.com/ocaSweden',
+      facebook: 'https://facebook.com/ocaSweden',
+      website: 'https://oca-sweden.org',
     },
     members: [],
     events: [],
@@ -201,10 +232,10 @@ export const branches: Branch[] = [
     coverImage: '/images/branches/ireland/cover.jpg',
     contactEmail: 'ireland@oca-eu.org',
     leadership: {
-      president: 'Ngozi Eze',
-      vicePresident: 'Placeholder VP',
-      secretary: 'Patrick Mensah',
-      treasurer: 'Placeholder Treasurer',
+      president: 'Tata President',
+      vicePresident: 'Iya VP',
+      secretary: 'Tata Secretary',
+      treasurer: 'Iya Treasurer',
     },
     socialLinks: {
       instagram: 'https://instagram.com/ocaIreland',
@@ -232,8 +263,8 @@ export const branches: Branch[] = [
     coverImage: '/images/branches/germany/cover.jpg',
     contactEmail: 'germany-berlin@oca-eu.org',
     leadership: {
-      president: 'Emmanuel Boateng',
-      vicePresident: 'Abena Frimpong',
+      president: 'Iya Beloe',
+      vicePresident: 'Tata VP',
       secretary: 'Secretary',
       treasurer: 'Treasurer',
     },
@@ -291,10 +322,10 @@ export const branches: Branch[] = [
     coverImage: '/images/branches/germany/cover.jpg',
     contactEmail: 'germany-munich@oca-eu.org',
     leadership: {
-      president: 'Christiane Bello',
-      vicePresident: 'Placeholder VP',
-      secretary: 'Felix Nkeng',
-      treasurer: 'Treasurer',
+      president: 'Tata Ewke Roland',
+      vicePresident: 'Iya VP',
+      secretary: 'Tata Secretary',
+      treasurer: 'Iya Treasurer',
     },
     socialLinks: {
       instagram: 'https://instagram.com/ocaGermanyMunich',

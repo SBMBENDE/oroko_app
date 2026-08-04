@@ -125,8 +125,8 @@ export default function ContactPage() {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-amber-600 shrink-0" />
-                <a href="mailto:contact@oca-eu.org" className="text-sm text-stone-600 hover:text-amber-700 transition-colors">
-                  contact@oca-eu.org
+                <a href="mailto:orokoeu@gmail.com" className="text-sm text-stone-600 hover:text-amber-700 transition-colors">
+                  orokoeu@gmail.com
                 </a>
               </div>
             </div>
